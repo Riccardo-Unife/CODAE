@@ -38,7 +38,8 @@ section {
     padding: 120px 0;
     box-shadow: var(--box-shadow);
     display: flex;
-    min-height: 100vh;
+    min-height: 100svh;
+    height: max-content;
     top: 0;
     position: sticky;
     background: var(--bg);
@@ -122,7 +123,7 @@ header {
     height: 100px;
     background: var(--header);
     box-shadow: var(--box-shadow);
-    /* backdrop-filter: blur(10px); */
+    backdrop-filter: blur(10px);
 
     display: flex;
     align-items: center;
@@ -212,9 +213,10 @@ header .container {
 /* HERO ----------------------------------------------------------------------------------------- */
 .hero {
     top: -250px;
-    height: 100vh;
+    min-height: 100svh;
+    height: max-content;
     display: flex;
-    align-items: flex-end;
+    padding-top: 400px;
     background: var(--bg);
 }
 .visually-hidden {                                                  /* Titolo testuale (nascosto) */
@@ -406,6 +408,10 @@ footer .mono {
 
 /* RESPONSIVE ----------------------------------------------------------------------------------- */
 @media(max-width: 900px) {
+    .hero {
+        top: -150px;
+        padding-top: 250px;
+    }
     .about-grid,
     .grid-2,
     .team-grid {
@@ -425,7 +431,8 @@ footer .mono {
         position: fixed;
         top: 0;
         right: 0;
-        height: 100vh;
+        min-height: 100svh;
+        height: max-content;
         width: 170px;
         padding:20px;
         text-align: center;
@@ -434,7 +441,7 @@ footer .mono {
     .header-right {
         position: fixed;
         justify-content: center;
-        top: 85vh;
+        top: 90svh;
         right: 0;
         width: 170px;
         gap: 30px;
