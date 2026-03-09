@@ -431,7 +431,7 @@ footer .mono {
         position: fixed;
         top: 0;
         right: 0;
-        min-height: 100svh;
+        min-height: 100vh;
         height: max-content;
         width: 170px;
         padding:20px;
