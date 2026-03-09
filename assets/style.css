@@ -38,7 +38,7 @@ section {
     padding: 120px 0;
     box-shadow: var(--box-shadow);
     display: flex;
-    min-height: 100svh;
+    min-height: 100vh;
     height: max-content;
     top: 0;
     position: sticky;
@@ -213,7 +213,7 @@ header .container {
 /* HERO ----------------------------------------------------------------------------------------- */
 .hero {
     top: -250px;
-    min-height: 100svh;
+    min-height: 100vh;
     height: max-content;
     display: flex;
     padding-top: 400px;
@@ -441,7 +441,7 @@ footer .mono {
     .header-right {
         position: fixed;
         justify-content: center;
-        top: 90svh;
+        top: 90vh;
         right: 0;
         width: 170px;
         gap: 30px;
