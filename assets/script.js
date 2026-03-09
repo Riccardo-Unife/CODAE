@@ -81,12 +81,11 @@ document.getElementById("email-link").textContent = u + "@" + d;
 
 // stiky lungo
 function aggiornaStickyTop() {
-    document.querySelectorAll('section').forEach(section => {
+    document.querySelectorAll('section:not(.hero)').forEach(section => {
         const altezzaContenuto = section.scrollHeight;
         const altezzaViewport = window.innerHeight;
 
         if (altezzaContenuto > altezzaViewport) {
-            // la sezione è più alta del viewport: permettiamo lo scroll
             section.style.top = `${altezzaViewport - altezzaContenuto}px`;
         } else {
             section.style.top = '0px';
