@@ -1,11 +1,5 @@
-<!-- siti di riferimento: -->
-<!-- https://multi2mech.com/ -->
-<!-- https://brg.ethz.ch/ -->
-<!-- https://www.mascotproject.eu/ -->
-<!-- https://teknehub.tecnopolo.fe.it/ -->
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <!-- SEO - INDICIZZAZIONE --------------------------------------------------------------------->
     <meta charset="UTF-8">
@@ -14,15 +8,15 @@
     <title>CODAE</title>
 
     <!-- Link alle lingue -->
-    <link rel="alternate" hreflang="it" href="it/">
-    <link rel="alternate" hreflang="en" href="">
+    <link rel="alternate" hreflang="it" href="../it/team">
+    <link rel="alternate" hreflang="en" href="../team">
 
     <!-- CSS e JS-->
-    <link rel="stylesheet" href="assets/style.css">
-    <script src="assets/script.js" defer></script>
+    <link rel="stylesheet" href="../../assets/style.css">
+    <script src="../../assets/script.js" defer></script>
 
     <!-- Logo scheda web -->
-    <link rel="icon" href="logo/logo_codae.svg?v=1" type="image/svg+xml">
+    <link rel="icon" href="../../logo/logo_codae.svg?v=1" type="image/svg+xml">
 
     <!-- Google Fonts e Icone-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,46 +29,39 @@
     <!-- HEADER ----------------------------------------------------------------------------------->
     <header>
         <div class="container">
-            <img src="logo/logo_codae.svg" alt="Logo" id="logo">    <!-- Logo -->
+            <a href="../">
+                <img src="../../logo/logo_codae.svg" alt="Logo" id="logo">
+            </a>
             <nav class="nav">                                       <!-- Link schede -->
-                <a href="research/" class="headerBtn">Research</a>
-                <a href="teaching/" class="headerBtn">Teaching</a>
-                <a href="publications/" class="headerBtn">Publications</a>
-                <a href="tools/" class="headerBtn">Tools</a>
-                <a href="team/" class="headerBtn">Team</a>
+                <a href="../research/" class="headerBtn">Research</a>
+                <a href="../teaching/" class="headerBtn">Teaching</a>
+                <a href="../publications/" class="headerBtn">Publications</a>
+                <a href="../tools/" class="headerBtn">Tools</a>
+                <a href="../team/" class="headerBtn">Team</a>
             </nav>
             <div class="header-right">                              <!-- Link social -->
                 <a href="https://linkedin.com" class="icon linkedin" target="_blank">
                     <i class="fa-brands fa-linkedin"></i>
                 </a>
-                <a href="it/" id="switch-lang">IT</a>                 <!-- Switch lingua (js) -->
+                <a href="../../team" id="switch-lang">EN</a>                 <!-- Switch lingua (js) -->
             </div>
-            <div class="hamburger" onclick="toggleMenu()">&lt; More</div><!-- Hamburgher -->
+            <div class="hamburger" onclick="toggleMenu()">&lt;</div><!-- Hamburgher -->
         </div>
     </header>
 
     <!-- HERO ------------------------------------------------------------------------------------->
-    <section class="hero hero-home">
+    <section class="hero">
         <div class="container">
-            <h1 class="hero-title">
-                <span class="visually-hidden">                      <!-- Titolo indicizzazione -->
-                    CODAE - Computational Optimization for Design of Architecture and Engineering
-                    A research group of the University of Ferrara
-                </span>
-                <span class="typewriter">                           <!-- Animazione titolo -->
-                    <span id="cod" class="cod"></span><span id="ae" class="ae"></span>
-                    <span class="cursor">_</span>
-                </span>
-            </h1>
+            <h1 class="hero-title">TEAM it</h1>
             <h2>Computational Optimization for Design of Architecture and Engineering</h2>
             <p>
                 A research group of the University of Ferrara<br>
                 Designing structures through algorithms, data and advanced simulation.
             </p>
             <div class="hero-buttons">                              <!-- Bottoni principali -->
-                <a href="publications/" class="btn secondary">Publications</a>
-                <a href="research/" class="btn secondary">Research area</a>
-                <a href="tools/" class="btn secondary">Tools</a>
+                <a href="../research/" class="btn secondary">Explore Research</a>
+                <a href="../publications/" class="btn secondary">Publications</a>
+                <a href="../tools/" class="btn secondary">Tools</a>
             </div>
         </div>
     </section>
@@ -125,7 +112,7 @@
                 </div>
             </div>
             <div class="section-buttons">                           <!-- Bottone -->
-                <a href="research/" class="btn primary">Show more</a>
+                <a href="../research/" class="btn primary">Show more</a>
             </div>
         </div>
     </section>
@@ -151,7 +138,7 @@
                 <p>[2024] Integrating responsive composites in sustainable building design.</p>
             </div>
             <div class="section-buttons">                           <!-- Bottone -->
-                <a href="publications/" class="btn primary">Show more</a>
+                <a href="../publications/" class="btn primary">Show more</a>
             </div>
         </div>
     </section>

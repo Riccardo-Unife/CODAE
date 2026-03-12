@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- SEO - INDICIZZAZIONE --------------------------------------------------------------------->
+    <meta charset="UTF-8">
+    <meta name="description" content="CODAE Team">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODAE - Team</title>
+
+    <!-- Link alle lingue -->
+    <link rel="alternate" hreflang="it" href="../it/team">
+    <link rel="alternate" hreflang="en" href="../team">
+
+    <!-- CSS e JS-->
+    <link rel="stylesheet" href="../assets/style.css">
+    <script src="../assets/script.js" defer></script>
+
+    <!-- Logo scheda web -->
+    <link rel="icon" href="../logo/logo_codae.svg?v=1" type="image/svg+xml">
+
+    <!-- Google Fonts e Icone-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- HEADER ----------------------------------------------------------------------------------->
+    <header>
+        <div class="container">
+            <a href="../">
+                <img src="../logo/logo_codae.svg" alt="Logo" id="logo">
+            </a>
+            <nav class="nav">                                       <!-- Link schede -->
+                <a href="../research/" class="headerBtn">Research</a>
+                <a href="../teaching/" class="headerBtn">Teaching</a>
+                <a href="../publications/" class="headerBtn">Publications</a>
+                <a href="../tools/" class="headerBtn">Tools</a>
+                <a href="../team/" class="headerBtn">Team</a>
+            </nav>
+            <div class="header-right">                              <!-- Link social -->
+                <a href="https://linkedin.com" class="icon linkedin" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="../it/team" id="switch-lang">IT</a>                 <!-- Switch lingua (js) -->
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">&lt;</div><!-- Hamburgher -->
+        </div>
+    </header>
+
+    <!-- HERO ------------------------------------------------------------------------------------->
+    <section class="hero hero-section">
+        <div class="container">
+            <h1 class="section-title">&gt; Team <span class="cursor-code">_</span></h1>
+        </div>
+    </section>
+
+    <!-- TEAM ------------------------------------------------------------------------------------->
+    <section class="cont-section">
+        <div class="container">
+            <div class="section-label">01 // Principal Investigator</div>
+            <div class="pi-info">
+                <div class="pi-photo-wrap">                         <!-- Foto Pi -->
+                    <img src="../logo/PI.png" alt="Prof. Maria Rossi" class="pi-photo" style="
+                        width: 240px;
+                        height: 320px;
+                        object-fit: cover;
+                    ">
+                </div>
+                <div class="contact">                               <!-- Contatti -->
+                    <h2 class="pi-name">Prof. Maria Rossi</h2>
+                    <h3 class="pub-title">Full Professor — University of Ferrara</h3>
+                    <p class="pi-bio">
+                        Maria Rossi leads the CODAE research group at the Department of Architecture of the University of Ferrara.
+                        Her work focuses on computational methods for structural optimization and adaptive systems,
+                        bridging advanced numerical simulation with architectural design.
+                        She holds a PhD in Structural Engineering from Politecnico di Milano and has been
+                        visiting researcher at ETH Zurich and TU Delft.
+                    </p>
+                    <div class="pub-tags">
+                        <span class="tag">structural optimization</span>
+                        <span class="tag">adaptive systems</span>
+                        <span class="tag">computational design</span>
+                    </div>
+                    <div class="member-links">
+                        <a href="mailto:m.rossi@unife.it" class="member-link">
+                            <i class="fa-solid fa-envelope"></i> m.rossi@unife.it
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" class="member-link">
+                            <i class="fa-brands fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="https://scholar.google.com" target="_blank" class="member-link">
+                            <i class="fa-solid fa-graduation-cap"></i> Scholar
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="cont-section">
+        <div class="container">
+            <div class="section-label">02 // Team</div>
+            <div class="team-grid2">                                <!-- Parti da AGGIORNARE: -->
+                <div class="member">
+                    <div class="pi-photo-wrap">                         <!-- Foto Pi -->
+                        <img src="../logo/T1.png" alt="Prof. Maria Rossi" class="pi-photo" style="
+                            width: 160px;
+                            height: 160px;
+                            object-fit: cover;
+                        ">
+                    </div>
+                    <div class="team-member">
+                        <h3 class="pub-title">Dr. Luca Bianchi</h3>
+                        <h4 class="pub-title">Postdoctoral Researcher</h4>
+                        <div class="pub-tags">
+                            <span class="tag">FEM</span>
+                            <span class="tag">nonlinear mechanics</span>
+                        </div>
+                        <div class="member-links">
+                            <a href="mailto:l.bianchi@unife.it" class="member-link">
+                                <i class="fa-solid fa-envelope"></i> l.bianchi@unife.it
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" class="member-link">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                            <a href="https://scholar.google.com" target="_blank" class="member-link">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="member">
+                    <div class="pi-photo-wrap">                         <!-- Foto Pi -->
+                        <img src="../logo/T2.png" alt="Prof. Maria Rossi" class="pi-photo" style="
+                            width: 160px;
+                            height: 160px;
+                            object-fit: cover;
+                        ">
+                    </div>
+                    <div class="team-member">
+                        <h3 class="pub-title">Anna Verdi</h3>
+                        <h4 class="pub-title">PhD Candidate — cycle XXXIX</h4>
+                        <div class="pub-tags">
+                            <span class="tag">seismic analysis</span>
+                            <span class="tag">smart materials</span>
+                        </div>
+                        <div class="member-links">
+                            <a href="mailto:a.verdi@unife.it" class="member-link">
+                                <i class="fa-solid fa-envelope"></i> a.verdi@unife.it
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" class="member-link">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                            <a href="https://scholar.google.com" target="_blank" class="member-link">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cont-section">
+        <div class="container">
+            <div class="section-label">03 // Where we are</div> 
+            <div class="info">
+                <div class="map">                                   <!-- Mappa -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1414.8246674963586!2d11.6225061912806!3d44.82870806536274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477e4e42a81eaf05%3A0x3d88ddab32c898a1!2sUniversit%C3%A0%20degli%20Studi%20di%20Ferrara%20-%20Dipartimento%20di%20Architettura!5e0!3m2!1sit!2sit!4v1773043558312!5m2!1sit!2sit" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="contact">                               <!-- Contatti -->
+                    <h3>Contact</h3>
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i>
+                        &nbsp;Via Roma 1, Milano
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+390212345678" class="contact-link">02 1234 5678</a>
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-envelope"></i>
+                        <a id="email-link" class="contact-link"></a>
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-clock"></i>
+                        &nbsp;Lun–Ven: 9:00 – 18:
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER ----------------------------------------------------------------------------------->
+    <footer>
+        <div class="container">
+            <p>CODAE - Computational Optimization for Design of Architecture and Engineering<br>
+            A research group of the University of Ferrara</p>
+
+            <p class="mono">build.version 1.0.0</p>
+        </div>
+    </footer>
+
+</body>
+</html>

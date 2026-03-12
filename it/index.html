@@ -1,151 +1,209 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
-    <!-- SEO - INDICIZZAZIONE -->
+    <!-- SEO - INDICIZZAZIONE --------------------------------------------------------------------->
     <meta charset="UTF-8">
     <meta name="description" content="Showpage CODE Computation in Design">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CODAES</title>
+    <title>CODAE</title>
 
     <!-- Link alle lingue -->
-    <link rel="alternate" hreflang="it" href="https://codaes.netlify.app/it/">
-    <link rel="alternate" hreflang="en" href="https://codaes.netlify.app/">
+    <link rel="alternate" hreflang="it" href="../it/">
+    <link rel="alternate" hreflang="en" href="../">
 
     <!-- CSS e JS-->
-    <link rel="stylesheet" href="/assets/style.css">
-    <script src="/assets/script.js" defer></script>
+    <link rel="stylesheet" href="../assets/style.css">
+    <script src="../assets/script.js" defer></script>
 
     <!-- Logo scheda web -->
-    <link rel="icon" href="/logo/logo.svg?v=1" type="image/svg+xml">
+    <link rel="icon" href="../logo/logo_codae.svg?v=1" type="image/svg+xml">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Google Fonts e Icone-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
-    <!-- Switch lingua (js) -->
-    <a id="switch-lang" href="#">[En]</a>
-
-<!-- HERO -->
-<section class="hero">
-    <div class="container">
-        <h1>COD<span>Æ</span>S</h1>
-        <p>Calcolo Ottimizzato per il Design di Architetture e Engineering Strutturale<br>
-        Designing structures through algorithms, data and advanced simulation.</p>
-
-        <div class="hero-buttons">
-            <a href="#" class="btn primary">Explore Research</a>
-            <a href="#" class="btn secondary">Publications</a>
+    <!-- HEADER ----------------------------------------------------------------------------------->
+    <header>
+        <div class="container">
+            <img src="../logo/logo_codae.svg" alt="Logo" id="logo">    <!-- Logo -->
+            <nav class="nav">                                       <!-- Link schede -->
+                <a href="../it/research/" class="headerBtn">Research</a>
+                <a href="../it/teaching/" class="headerBtn">Teaching</a>
+                <a href="../it/publications/" class="headerBtn">Publications</a>
+                <a href="../it/tools/" class="headerBtn">Tools</a>
+                <a href="../it/team/" class="headerBtn">Team</a>
+            </nav>
+            <div class="header-right">                              <!-- Link social -->
+                <a href="https://linkedin.com" class="icon linkedin" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="../" id="switch-lang">EN</a>                 <!-- Switch lingua (js) -->
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">&lt;</div><!-- Hamburgher -->
         </div>
+    </header>
 
-        <span class="mono">&gt; structural intelligence initialized_</span>
-    </div>
-</section>
-
-<!-- ABOUT -->
-<section>
-    <div class="container">
-        <div class="section-label">01 // About</div>
-        <div class="about-grid">
-            <div>
-                <h2>Research at the intersection of computation and structural design.</h2>
-                <p style="margin-top:20px;color:var(--text-secondary);">
-                    We investigate computational methods for structural optimization,
-                    adaptive systems and algorithmic design strategies in civil engineering.
-                </p>
-            </div>
-            <div class="code-block">
-if (design == intelligent) {<br>
-&nbsp;&nbsp;&nbsp;&nbsp;structure = optimized;<br>
-}
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- RESEARCH -->
-<section>
-    <div class="container">
-        <div class="section-label">02 // Research Areas</div>
-        <div class="grid-2">
-            <div class="card">
-                <div class="card-number">01</div>
-                <h3>Computational Mechanics</h3>
-                <p>Advanced simulation and nonlinear modeling.</p>
-            </div>
-            <div class="card">
-                <div class="card-number">02</div>
-                <h3>Structural Optimization</h3>
-                <p>Data-driven and parametric design workflows.</p>
-            </div>
-            <div class="card">
-                <div class="card-number">03</div>
-                <h3>Adaptive Systems</h3>
-                <p>Responsive and intelligent structures.</p>
-            </div>
-            <div class="card">
-                <div class="card-number">04</div>
-                <h3>AI for Civil Engineering</h3>
-                <p>Machine learning for predictive modeling.</p>
+    <!-- HERO ------------------------------------------------------------------------------------->
+    <section class="hero hero-panel">
+        <div class="container">
+            <h1 class="hero-title">
+                <span class="visually-hidden">                      <!-- Titolo indicizzazione -->
+                    CODAE - Computational Optimization for Design of Architecture and Engineering
+                    A research group of the University of Ferrara
+                </span>
+                <span class="typewriter">                           <!-- Animazione titolo -->
+                    <span id="cod" class="cod"></span><span id="ae" class="ae"></span>
+                    <span class="cursor">_</span>
+                </span>
+            </h1>
+            <h2>Computational Optimization for Design of Architecture and Engineering</h2>
+            <p>
+                A research group of the University of Ferrara<br>
+                Designing structures through algorithms, data and advanced simulation.
+            </p>
+            <div class="hero-buttons">                              <!-- Bottoni principali -->
+                <a href="../it/research/" class="btn secondary">Explore Research</a>
+                <a href="../it/publications/" class="btn secondary">Publications</a>
+                <a href="../it/tools/" class="btn secondary">Tools</a>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- PROJECTS -->
-<section>
-    <div class="container">
-        <div class="section-label">03 // Projects</div>
-
-        <div class="project">
-            <div class="project-year">[2026]</div>
-            <h3>Adaptive Concrete Systems</h3>
-            <p>Data-driven structural optimization.</p>
-        </div>
-
-        <div class="project">
-            <div class="project-year">[2025]</div>
-            <h3>AI-based Seismic Modeling</h3>
-            <p>Predictive resilience analysis.</p>
-        </div>
-
-    </div>
-</section>
-
-<!-- TEAM -->
-<section>
-    <div class="container">
-        <div class="section-label">04 // Team</div>
-        <div class="team-grid">
-
-            <div class="team-member">
-                <h4>Dr. Maria Rossi</h4>
-                <p>role: computational design</p>
+    <!-- ABOUT ------------------------------------------------------------------------------------>
+    <section class="panel panel1">
+        <div class="container">
+            <div class="section-label">01 // About</div>
+            <div class="about-grid">                                <!-- Descrizione -->
+                <div>
+                    <h3>Research at the intersection of computation and structural design.</h4>
+                    <p>
+                        We investigate computational methods for structural optimization,
+                        adaptive systems and algorithmic design strategies in civil engineering.
+                    </p>
+                </div>
+                <div class="code-block">                            <!-- Codice -->
+<pre>
+<span class="kw">if</span> (<span class="var">design</span> == <span class="var">intelligent</span>) {
+    <span class="var">structure</span> = <span class="var">optimized</span>;
+} <span class="cursor-code">_</span>
+</pre>
+                </div>
             </div>
-
-            <div class="team-member">
-                <h4>Dr. Luca Bianchi</h4>
-                <p>role: structural mechanics</p>
-            </div>
-
-            <div class="team-member">
-                <h4>PhD. Anna Verdi</h4>
-                <p>role: optimization algorithms</p>
-            </div>
-
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- FOOTER -->
-<footer>
-    <div class="container">
-        <p>CODE — COmputation in DEsign of civil structures<br>
-        Department of Civil Engineering</p>
+    <!-- RESEARCH --------------------------------------------------------------------------------->
+    <section class="panel panel2">
+        <div class="container">
+            <div class="section-label">02 // Research Areas</div>
+            <div class="grid-2">                                    <!-- Parti da AGGIORNARE: -->
+                <div class="card">
+                    <h3>Computational Mechanics</h3>
+                    <p>Advanced simulation and nonlinear modeling.</p>
+                </div>
+                <div class="card">
+                    <h3>Structural Optimization</h3>
+                    <p>Data-driven and parametric design workflows.</p>
+                </div>
+                <div class="card">
+                    <h3>Adaptive Systems</h3>
+                    <p>Responsive and intelligent structures.</p>
+                </div>
+                <div class="card">
+                    <h3>AI for Civil Engineering</h3>
+                    <p>Machine learning for predictive modeling.</p>
+                </div>
+            </div>
+            <div class="section-buttons">                           <!-- Bottone -->
+                <a href="../it/research/" class="btn primary">Show more</a>
+            </div>
+        </div>
+    </section>
 
-        <div class="mono">build.version 1.0.0</div>
-    </div>
-</footer>
+    <!-- PUBLICATIONS ----------------------------------------------------------------------------->
+    <section class="panel panel3">
+        <div class="container">
+            <div class="section-label">03 // Publications</div>     <!-- Parti da AGGIORNARE: -->
+            <div class="publications">
+                <h3>Adaptive Concrete Systems</h3>
+                <p>[2026] Driven structural optimization.</p>
+            </div>
+            <div class="publications">
+                <h3>Genetic algorithms for optimized computation</h3>
+                <p>[2025] Generational optimization parameters and their influence.</p>
+            </div>
+            <div class="publications">
+                <h3>AI-based Seismic Modeling</h3>
+                <p>[2025] Predictive resilience analysis.</p>
+            </div>
+            <div class="publications">
+                <h3>Smart Materials for Energy Efficiency</h3>
+                <p>[2024] Integrating responsive composites in sustainable building design.</p>
+            </div>
+            <div class="section-buttons">                           <!-- Bottone -->
+                <a href="../it/publications/" class="btn primary">Show more</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEAM ------------------------------------------------------------------------------------->
+    <section class="panel panel4">
+        <div class="container">
+            <div class="section-label">04 // Team</div>
+            <div class="team-grid">                                 <!-- Parti da AGGIORNARE: -->
+                <div class="team-member">
+                    <h3>Dr. Maria Rossi</h3>
+                    <p>role: computational design</p>
+                </div>
+                <div class="team-member">
+                    <h3>Dr. Luca Bianchi</h3>
+                    <p>role: structural mechanics</p>
+                </div>
+                <div class="team-member">
+                    <h3>PhD. Anna Verdi</h3>
+                    <p>role: optimization algorithms</p>
+                </div>
+            </div>
+            <div class="info">
+                <div class="map">                                   <!-- Mappa -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1414.8246674963586!2d11.6225061912806!3d44.82870806536274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477e4e42a81eaf05%3A0x3d88ddab32c898a1!2sUniversit%C3%A0%20degli%20Studi%20di%20Ferrara%20-%20Dipartimento%20di%20Architettura!5e0!3m2!1sit!2sit!4v1773043558312!5m2!1sit!2sit" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="contact">                               <!-- Contatti -->
+                    <h3>Contact</h3>
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i>
+                        &nbsp;Via Roma 1, Milano
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+390212345678" class="contact-link">02 1234 5678</a>
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-envelope"></i>
+                        <a id="email-link" class="contact-link"></a>
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-clock"></i>
+                        &nbsp;Lun–Ven: 9:00 – 18:
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER ----------------------------------------------------------------------------------->
+    <footer>
+        <div class="container">
+            <p>CODAE - Computational Optimization for Design of Architecture and Engineering<br>
+            A research group of the University of Ferrara</p>
+
+            <p class="mono">build.version 1.0.0</p>
+        </div>
+    </footer>
 
 </body>
 </html>

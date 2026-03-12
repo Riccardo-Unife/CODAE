@@ -1,9 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+    <!-- Home inglese -->
     <url>
-        <loc>https://codaes.netlify.app/</loc>
+        <loc>https://__/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://__/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://__/it/"/>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
     </url>
-        <url>
-        <loc>https://codaes.netlify.app/it/</loc>
+
+    <!-- Home italiana -->
+    <url>
+        <loc>https://__/it/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://__/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://__/it/"/>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
     </url>
+
+
+    <!-- Research inglese -->
+    <url>
+        <loc>https://__/research/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://__/research/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://__/it/research/"/>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Research italiana -->
+    <url>
+        <loc>https://__/it/research/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://__/research/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://__/it/research/"/>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+
+    <!-- Teaching inglese -->
+    <url>
+        <loc>https://__/teaching/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://__/teaching/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://__/it/teaching/"/>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Teaching italiana -->
+    <url>
+        <loc>https://__/it/teaching/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://__/teaching/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://__/it/teaching/"/>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+
+    <!-- Publications inglese -->
+    <url>
+        <loc>https://__/publications/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://__/publications/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://__/it/publications/"/>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Publications italiana -->
+    <url>
+        <loc>https://__/it/publications/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://__/publications/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://__/it/publications/"/>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+
+    <!-- Tools inglese -->
+    <url>
+        <loc>https://__/tools/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://__/tools/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://__/it/tools/"/>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Tools italiana -->
+    <url>
+        <loc>https://__/it/tools/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://__/tools/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://__/it/tools/"/>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+
+    <!-- Team inglese -->
+    <url>
+        <loc>https://__/team/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://__/team/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://__/it/team/"/>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Team italiana -->
+    <url>
+        <loc>https://__/it/team/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://__/team/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://__/it/team/"/>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
 </urlset>
