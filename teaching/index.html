@@ -3,9 +3,9 @@
 <head>
     <!-- SEO - INDICIZZAZIONE --------------------------------------------------------------------->
     <meta charset="UTF-8">
-    <meta name="description" content="Showpage CODE Computation in Design">
+    <meta name="description" content="CODAE Teaching – Courses, workshops and seminars on computational design and structural optimization at the University of Ferrara.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CODAE</title>
+    <title>CODAE - Teaching</title>
 
     <!-- Link alle lingue -->
     <link rel="alternate" hreflang="it" href="../it/teaching/">
@@ -22,89 +22,116 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
 </head>
 
 <body>
     <!-- HEADER ----------------------------------------------------------------------------------->
     <header>
         <div class="container">
-            <a href="../">
-                <img src="../logo/logo_codae.svg" alt="Logo" id="logo">
-            </a>
+            <a href="../"><img src="../logo/logo_codae.svg" alt="Logo" id="logo"></a>
             <nav class="nav">                                       <!-- Link schede -->
-                <a href="../research/" class="headerBtn">Research</a>
-                <a href="../teaching/" class="headerBtn">Teaching</a>
-                <a href="../publications/" class="headerBtn">Publications</a>
-                <a href="../tools/" class="headerBtn">Tools</a>
-                <a href="../team/" class="headerBtn">Team</a>
+                <a href="../research/" class="shift">
+                    <span class="arrow underline">Research</span>
+                </a>
+                <a href="../teaching/" class="shift">
+                    <span class="arrow underline">Teaching</span>
+                </a>
+                <a href="../publications/" class="shift">
+                    <span class="arrow underline">Publications</span>
+                </a>
+                <a href="../tools/" class="shift">
+                    <span class="arrow underline">Tools</span>
+                </a>
+                <a href="../team/" class="shift">
+                    <span class="arrow underline">Team</span>
+                </a>
             </nav>
             <div class="header-right">                              <!-- Link social -->
-                <a href="https://linkedin.com" class="icon linkedin" target="_blank">
-                    <i class="fa-brands fa-linkedin"></i>
+                <a href="https://linkedin.com" class="icon color" target="_blank">
+                    <i class="fa-brands fa-square-linkedin"></i>
                 </a>
-                <a href="../it/teaching/" id="switch-lang">IT</a>                 <!-- Switch lingua (js) -->
+                <a href="../it/teaching/" class="icon color">IT</a> <!-- Switch lingua (js) -->
             </div>
-            <div class="hamburger" onclick="toggleMenu()">&lt;</div><!-- Hamburgher -->
+            <div class="hamburger" onclick="toggleMenu()">&lt; More</div><!-- Hamburgher -->
         </div>
     </header>
 
     <!-- HERO ------------------------------------------------------------------------------------->
-    <section class="hero hero-section">
+    <section class="hero">
         <div class="container">
-            <h1 class="section-title">&gt; Teaching <span class="cursor-code">_</span></h1>
+            <h1 class="section-title">&gt; Teaching <span class="cursor">_</span></h1>
         </div>
     </section>
-    <!-- RESEARCH --------------------------------------------------------------------------------->
-    <section class="cont-section">
+    <!-- TEACHING --------------------------------------------------------------------------------->
+    <section>
         <div class="container">                                     <!-- Parti da AGGIORNARE: -->
-            <div class="contact">
-                <h3 class="teach">Computational Mechanics</h3>
-                <div class="pub-tags">
-                    <span class="pub-type">@pdh_course</span>
-                    <span class="tag">structural optimization</span>
-                    <span class="tag">adaptive systems</span>
-                    <span class="tag">computational design</span>
+            <div class="grid-1">
+                <div>
+                    <h3>Computational Mechanics</h3>
+                    <div class="tags">
+                        <span class="tag accent">@pdh_course</span>
+                        <span class="tag">structural optimization</span>
+                        <span class="tag">adaptive systems</span>
+                        <span class="tag">computational design</span>
+                    </div>
+                    <p class="paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tortor lacus, vehicula tincidunt venenatis quis, pellentesque id elit. Praesent porttitor est ut mauris ultrices interdum. Vestibulum ut commodo metus. Proin malesuada eu augue ut luctus. Ut lacinia enim at libero congue, in tempor felis semper. Quisque in tortor risus. Aliquam erat volutpat. Suspendisse potenti. Nullam varius mauris et nisi tristique, quis auctor leo euismod. Aenean vel dolor varius, luctus nulla in, auctor dolor. Pellentesque dapibus turpis vel aliquam gravida. Praesent non sem gravida, commodo purus et, tincidunt sapien. Quisque ante augue, semper et ipsum eu, sollicitudin rhoncus mi.<br>
+                        Curabitur auctor placerat dui id volutpat. Donec consequat egestas libero, vel faucibus urna viverra mollis. In vestibulum ultrices gravida. Duis auctor purus et justo viverra feugiat ut sed nibh. Vestibulum nec dignissim magna. Nulla egestas arcu et pellentesque hendrerit. Pellentesque non facilisis dolor. Fusce dignissim magna eu aliquam hendrerit. Nunc nec erat sit amet ex aliquam commodo in quis mi.
+                    </p>
                 </div>
-                <p class="th-descript">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tortor lacus, vehicula tincidunt venenatis quis, pellentesque id elit. Praesent porttitor est ut mauris ultrices interdum. Vestibulum ut commodo metus. Proin malesuada eu augue ut luctus. Ut lacinia enim at libero congue, in tempor felis semper. Quisque in tortor risus. Aliquam erat volutpat. Suspendisse potenti. Nullam varius mauris et nisi tristique, quis auctor leo euismod. Aenean vel dolor varius, luctus nulla in, auctor dolor. Pellentesque dapibus turpis vel aliquam gravida. Praesent non sem gravida, commodo purus et, tincidunt sapien. Quisque ante augue, semper et ipsum eu, sollicitudin rhoncus mi.<br>               Curabitur auctor placerat dui id volutpat. Donec consequat egestas libero, vel faucibus urna viverra mollis. In vestibulum ultrices gravida. Duis auctor purus et justo viverra feugiat ut sed nibh. Vestibulum nec dignissim magna. Nulla egestas arcu et pellentesque hendrerit. Pellentesque non facilisis dolor. Fusce dignissim magna eu aliquam hendrerit. Nunc nec erat sit amet ex aliquam commodo in quis mi.
-                </p>
-            </div>
-            <div class="contact">
-                <h3 class="teach">Structural Optimization</h3>
-                <div class="pub-tags">
-                    <span class="pub-type">@degree_course</span>
-                    <span class="tag">structural optimization</span>
-                    <span class="tag">adaptive systems</span>
-                    <span class="tag">computational design</span>
+                <div>
+                    <h3>Computational Mechanics</h3>
+                    <div class="tags">
+                        <span class="tag accent">@master</span>
+                        <span class="tag">structural optimization</span>
+                        <span class="tag">adaptive systems</span>
+                        <span class="tag">computational design</span>
+                    </div>
+                    <p class="paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tortor lacus, vehicula tincidunt venenatis quis, pellentesque id elit. Praesent porttitor est ut mauris ultrices interdum. Vestibulum ut commodo metus. Proin malesuada eu augue ut luctus. Ut lacinia enim at libero congue, in tempor felis semper. Quisque in tortor risus. Aliquam erat volutpat. Suspendisse potenti. Nullam varius mauris et nisi tristique, quis auctor leo euismod. Aenean vel dolor varius, luctus nulla in, auctor dolor. Pellentesque dapibus turpis vel aliquam gravida. Praesent non sem gravida, commodo purus et, tincidunt sapien. Quisque ante augue, semper et ipsum eu, sollicitudin rhoncus mi.<br>
+                        Curabitur auctor placerat dui id volutpat. Donec consequat egestas libero, vel faucibus urna viverra mollis. In vestibulum ultrices gravida. Duis auctor purus et justo viverra feugiat ut sed nibh. Vestibulum nec dignissim magna. Nulla egestas arcu et pellentesque hendrerit. Pellentesque non facilisis dolor. Fusce dignissim magna eu aliquam hendrerit. Nunc nec erat sit amet ex aliquam commodo in quis mi.
+                    </p>
                 </div>
-                <p class="th-descript">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tortor lacus, vehicula tincidunt venenatis quis, pellentesque id elit. Praesent porttitor est ut mauris ultrices interdum. Vestibulum ut commodo metus. Proin malesuada eu augue ut luctus. Ut lacinia enim at libero congue, in tempor felis semper. Quisque in tortor risus. Aliquam erat volutpat. Suspendisse potenti. Nullam varius mauris et nisi tristique, quis auctor leo euismod. Aenean vel dolor varius, luctus nulla in, auctor dolor. Pellentesque dapibus turpis vel aliquam gravida. Praesent non sem gravida, commodo purus et, tincidunt sapien. Quisque ante augue, semper et ipsum eu, sollicitudin rhoncus mi.<br>               Curabitur auctor placerat dui id volutpat. Donec consequat egestas libero, vel faucibus urna viverra mollis. In vestibulum ultrices gravida. Duis auctor purus et justo viverra feugiat ut sed nibh. Vestibulum nec dignissim magna. Nulla egestas arcu et pellentesque hendrerit. Pellentesque non facilisis dolor. Fusce dignissim magna eu aliquam hendrerit. Nunc nec erat sit amet ex aliquam commodo in quis mi.
-                </p>
-            </div>
-            <div class="contact">
-                <h3 class="teach">Adaptive Systems</h3>
-                <div class="pub-tags">
-                    <span class="pub-type">@modules</span>
-                    <span class="tag">structural optimization</span>
-                    <span class="tag">adaptive systems</span>
-                    <span class="tag">computational design</span>
+                <div>
+                    <h3>Structural Optimization</h3>
+                    <div class="tags">
+                        <span class="tag accent">@degree_course</span>
+                        <span class="tag">structural optimization</span>
+                        <span class="tag">adaptive systems</span>
+                        <span class="tag">computational design</span>
+                    </div>
+                    <p class="paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tortor lacus, vehicula tincidunt venenatis quis, pellentesque id elit. Praesent porttitor est ut mauris ultrices interdum. Vestibulum ut commodo metus. Proin malesuada eu augue ut luctus. Ut lacinia enim at libero congue, in tempor felis semper. Quisque in tortor risus. Aliquam erat volutpat. Suspendisse potenti. Nullam varius mauris et nisi tristique, quis auctor leo euismod. Aenean vel dolor varius, luctus nulla in, auctor dolor. Pellentesque dapibus turpis vel aliquam gravida. Praesent non sem gravida, commodo purus et, tincidunt sapien. Quisque ante augue, semper et ipsum eu, sollicitudin rhoncus mi.<br>
+                        Curabitur auctor placerat dui id volutpat. Donec consequat egestas libero, vel faucibus urna viverra mollis. In vestibulum ultrices gravida. Duis auctor purus et justo viverra feugiat ut sed nibh. Vestibulum nec dignissim magna. Nulla egestas arcu et pellentesque hendrerit. Pellentesque non facilisis dolor. Fusce dignissim magna eu aliquam hendrerit. Nunc nec erat sit amet ex aliquam commodo in quis mi.
+                    </p>
                 </div>
-                <p class="th-descript">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tortor lacus, vehicula tincidunt venenatis quis, pellentesque id elit. Praesent porttitor est ut mauris ultrices interdum. Vestibulum ut commodo metus. Proin malesuada eu augue ut luctus. Ut lacinia enim at libero congue, in tempor felis semper. Quisque in tortor risus. Aliquam erat volutpat. Suspendisse potenti. Nullam varius mauris et nisi tristique, quis auctor leo euismod. Aenean vel dolor varius, luctus nulla in, auctor dolor. Pellentesque dapibus turpis vel aliquam gravida. Praesent non sem gravida, commodo purus et, tincidunt sapien. Quisque ante augue, semper et ipsum eu, sollicitudin rhoncus mi.<br>               Curabitur auctor placerat dui id volutpat. Donec consequat egestas libero, vel faucibus urna viverra mollis. In vestibulum ultrices gravida. Duis auctor purus et justo viverra feugiat ut sed nibh. Vestibulum nec dignissim magna. Nulla egestas arcu et pellentesque hendrerit. Pellentesque non facilisis dolor. Fusce dignissim magna eu aliquam hendrerit. Nunc nec erat sit amet ex aliquam commodo in quis mi.
-                </p>
-            </div>
-            <div class="contact">
-                <h3 class="teach">AI for Civil Engineering</h3>
-                <div class="pub-tags">
-                    <span class="pub-type">@seminars</span>
-                    <span class="tag">structural optimization</span>
-                    <span class="tag">adaptive systems</span>
-                    <span class="tag">computational design</span>
+                <div>
+                    <h3>Adaptive Systems</h3>
+                    <div class="tags">
+                        <span class="tag accent">@modules</span>
+                        <span class="tag">structural optimization</span>
+                        <span class="tag">adaptive systems</span>
+                        <span class="tag">computational design</span>
+                    </div>
+                    <p class="paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tortor lacus, vehicula tincidunt venenatis quis, pellentesque id elit. Praesent porttitor est ut mauris ultrices interdum. Vestibulum ut commodo metus. Proin malesuada eu augue ut luctus. Ut lacinia enim at libero congue, in tempor felis semper. Quisque in tortor risus. Aliquam erat volutpat. Suspendisse potenti. Nullam varius mauris et nisi tristique, quis auctor leo euismod. Aenean vel dolor varius, luctus nulla in, auctor dolor. Pellentesque dapibus turpis vel aliquam gravida. Praesent non sem gravida, commodo purus et, tincidunt sapien. Quisque ante augue, semper et ipsum eu, sollicitudin rhoncus mi.<br>
+                        Curabitur auctor placerat dui id volutpat. Donec consequat egestas libero, vel faucibus urna viverra mollis. In vestibulum ultrices gravida. Duis auctor purus et justo viverra feugiat ut sed nibh. Vestibulum nec dignissim magna. Nulla egestas arcu et pellentesque hendrerit. Pellentesque non facilisis dolor. Fusce dignissim magna eu aliquam hendrerit. Nunc nec erat sit amet ex aliquam commodo in quis mi.
+                    </p>
                 </div>
-                <p class="th-descript">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tortor lacus, vehicula tincidunt venenatis quis, pellentesque id elit. Praesent porttitor est ut mauris ultrices interdum. Vestibulum ut commodo metus. Proin malesuada eu augue ut luctus. Ut lacinia enim at libero congue, in tempor felis semper. Quisque in tortor risus. Aliquam erat volutpat. Suspendisse potenti. Nullam varius mauris et nisi tristique, quis auctor leo euismod. Aenean vel dolor varius, luctus nulla in, auctor dolor. Pellentesque dapibus turpis vel aliquam gravida. Praesent non sem gravida, commodo purus et, tincidunt sapien. Quisque ante augue, semper et ipsum eu, sollicitudin rhoncus mi.<br>               Curabitur auctor placerat dui id volutpat. Donec consequat egestas libero, vel faucibus urna viverra mollis. In vestibulum ultrices gravida. Duis auctor purus et justo viverra feugiat ut sed nibh. Vestibulum nec dignissim magna. Nulla egestas arcu et pellentesque hendrerit. Pellentesque non facilisis dolor. Fusce dignissim magna eu aliquam hendrerit. Nunc nec erat sit amet ex aliquam commodo in quis mi.
-                </p>
+                <div>
+                    <h3>AI for Civil Engineering</h3>
+                    <div class="tags">
+                        <span class="tag accent">@seminars</span>
+                        <span class="tag">structural optimization</span>
+                        <span class="tag">adaptive systems</span>
+                        <span class="tag">computational design</span>
+                    </div>
+                    <p class="paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tortor lacus, vehicula tincidunt venenatis quis, pellentesque id elit. Praesent porttitor est ut mauris ultrices interdum. Vestibulum ut commodo metus. Proin malesuada eu augue ut luctus. Ut lacinia enim at libero congue, in tempor felis semper. Quisque in tortor risus. Aliquam erat volutpat. Suspendisse potenti. Nullam varius mauris et nisi tristique, quis auctor leo euismod. Aenean vel dolor varius, luctus nulla in, auctor dolor. Pellentesque dapibus turpis vel aliquam gravida. Praesent non sem gravida, commodo purus et, tincidunt sapien. Quisque ante augue, semper et ipsum eu, sollicitudin rhoncus mi.<br>
+                        Curabitur auctor placerat dui id volutpat. Donec consequat egestas libero, vel faucibus urna viverra mollis. In vestibulum ultrices gravida. Duis auctor purus et justo viverra feugiat ut sed nibh. Vestibulum nec dignissim magna. Nulla egestas arcu et pellentesque hendrerit. Pellentesque non facilisis dolor. Fusce dignissim magna eu aliquam hendrerit. Nunc nec erat sit amet ex aliquam commodo in quis mi.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -112,10 +139,57 @@
     <!-- FOOTER ----------------------------------------------------------------------------------->
     <footer>
         <div class="container">
-            <p>CODAE - Computational Optimization for Design of Architecture and Engineering<br>
-            A research group of the University of Ferrara</p>
-
-            <p class="mono">build.version 1.0.0</p>
+            <div class="grid-3 line" style="justify-items: center; align-items: center;">
+                <img src="../logo/codae unife.svg" alt="Logo" class="logo-footer">
+                <div class="links-container">
+                    <p class="link">
+                        <a href="https://www.unife.it/it" target="_blank" class="underline">
+                            University of Ferrara
+                        </a>
+                    </p>
+                    <p class="link">
+                        <a href="https://architettura.unife.it/it" target="_blank" class="underline">
+                            Department of Architecture
+                        </a>
+                    </p>
+                    <p class="link">
+                        <a href="../" class="underline">
+                            CODÆ Research Group
+                        </a>
+                    </p>
+                </div>
+                <div class="links-container">
+                    <p class="link">
+                        <a href="#" class="underline">
+                            Via Roma 1, Milano
+                        </a>
+                    </p>
+                    <p class="link">
+                        <a href="tel:+390212345678" class="underline">
+                            02 1234 5678
+                        </a>
+                    </p>
+                    <p class="link">
+                        <a id="email-link-footer" class="underline">
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-nav link horizontal line">
+                <a href="../" class="underline">Home</a>
+                <a href="../research/" class="underline">Research</a>
+                <a href="../teaching/" class="underline">Teaching</a>
+                <a href="../publications/" class="underline">Publications</a>
+                <a href="../tools/" class="underline">Tools</a>
+                <a href="../team/" class="underline">Team</a>
+            </div>
+            <div class="footer-nav link horizontal">
+                <p class="mono">Copyright @ 2026, Università di Ferrara</p>
+                <div style="display: flex; gap: var(--space-l);">
+                    <a href="https://www.unife.it/it/ateneo/protezione-dati-personali" target="_blank" class="mono underline">Privacy Policy</a>
+                    <a href="https://www.unife.it/it/informativa-cookie" target="_blank" class="mono underline">Cookie Policy</a>
+                </div>
+            </div>
         </div>
     </footer>
 

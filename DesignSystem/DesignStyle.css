@@ -1,0 +1,662 @@
+/* =================================================================================================
+   CODAE — Design System
+   style.css v2.0
+   =================================================================================================
+
+   INDEX
+   1.  Tokens (variabili CSS)
+   2.  Reset & base
+   3.  Tipografia
+   4.  Layout — container, section, grid
+   5.  Componenti — btn, badge, tag, label
+   6.  Interazioni — hover link, arrow prefix
+   7.  Header & nav
+   8.  Hero
+   9.  Footer
+   10. Utilities
+   11. Responsive
+
+   ============================================================================================== */
+
+
+/* -- 1. PALETTE -------------------------------------------------------------------------------- */
+:root {
+
+    /* Colori base */
+    --bg:               #F9F9F9;
+    --bg-dark:          #272933;
+    --text-primary:     #272933;
+    --text-secondary:   #272933a8;                                /* 66% */
+    --border:           #CCCCCC;
+    --border-subtle:    #CCCCCC54;                                /* 33% */
+
+    /* Accenti */
+    --accent:           #A8384D;
+    --accent-blue:      #4D95FA;
+    --accent-yellow:    #FAB24B;
+
+    /* Ombre */
+    --shadow:           0 0 20px #0000001a;
+    --shadow-strong:    0 5px 25px #00000033;
+
+    /* Spaziatura */
+    --space-xs:         4px;
+    --space-s:          8px;
+    --space-m:          16px;
+    --space-l:          32px;
+    --space-xl:         60px;
+    --space-xxl:        120px;
+
+    /* Tipografia */
+    --font-sans:        'Google Sans Flex', sans-serif;
+    --font-mono:        'Google Sans Code', monospace;
+
+    /* Weight */
+    --weight-s:         400;
+    --weight-l:         500;
+
+    /* Spazziatura */
+    --line-xl:          1.6;
+
+    /* Border radius */
+    --radius-s:         3px;
+    --radius-m:         5px;
+
+    /* Transizioni */
+    --transition:       0.2s ease;
+    --transition-slow:  0.5s ease;
+}
+
+/* -- 2. RESET & BASE --------------------------------------------------------------------------- */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-mono);
+    font-weight: var(--weight-s);
+    line-height: var(--line-xl);
+    background: var(--bg);
+    color: var(--text-primary);
+
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a img, button img, img {
+    display: block;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* -- 3. TIPOGRAFIA ----------------------------------------------------------------------------- */
+
+/* Titolo hero homepage (CODÆ) */
+.hero-title {
+    font-family: var(--font-sans);
+    font-size: clamp(2.5rem, 8vw, 4rem);
+    font-weight: 300;
+    line-height: 1.1;
+}
+
+/* Titolo hero pagine interne (> Publications _) */
+.section-title {
+    font-family: var(--font-mono);
+    font-size: clamp(2rem, 6vw, 4rem);
+    font-weight: 450;
+    line-height: 1.1;
+}
+
+/* Titoli di sezione (h2 sottotitolo hero) */
+h2 {
+    font-family: var(--font-sans);
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+/* Titoli card / componenti */
+h3 {
+    font-family: var(--font-mono);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* Testo body */
+p {
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+/* Testo monospace (metadati, codice inline, label) */
+.mono {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+/* Label di sezione: "01 // About" */
+.section-label {
+    font-family: var(--font-mono);
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--accent);
+    margin-bottom: var(--space-l);
+}
+
+/* Testo nascosto per SEO */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+}
+
+
+/* ── 4. LAYOUT ────────────────────────────────────────────────────────────── */
+
+/* Contenitore centrato */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Sezione sticky (homepage) */
+section {
+    padding: var(--space-xxl) 0;
+    box-shadow: var(--shadow);
+    display: flex;
+    min-height: 100vh;
+    height: max-content;
+    top: 0;
+    position: sticky;
+    background: var(--bg);
+}
+
+/* Sezione hero pagine interne — no sticky, no min-height */
+.hero-section {
+    box-shadow: none;
+    min-height: 0;
+    height: max-content;
+    position: static;
+    padding-bottom: var(--space-l);
+}
+
+/* Sezione contenuto pagine interne — no sticky */
+.cont-section {
+    box-shadow: none;
+    min-height: 0;
+    height: max-content;
+    position: static;
+    padding: 0 0 var(--space-xl);
+}
+
+/* Griglia 2 colonne */
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+}
+
+/* Griglia 3 colonne */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-xl);
+}
+
+
+/* ── 5. COMPONENTI ────────────────────────────────────────────────────────── */
+
+/* — Bottone ----------------------------------------------------------------- */
+.btn {
+    display: inline-block;
+    white-space: nowrap;
+    padding: 10px 20px 10px 7px;
+    border: 1px solid var(--accent);
+    border-radius: var(--radius-m);
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    font-weight: 400;
+    transition: transform var(--transition), padding var(--transition);
+    position: relative;
+}
+.btn::before {
+    content: ">\00a0";
+    display: inline-block;
+    transform: translateX(-6px);
+    opacity: 0;
+    transition: transform var(--transition), opacity var(--transition);
+}
+.btn:hover {
+    transform: translateY(-2px);
+    padding: 10px 13px 10px 14px;
+}
+.btn:hover::before {
+    transform: translateX(0);
+    opacity: 1;
+}
+.btn:active {
+    transform: translateY(1px);
+}
+
+.btn.primary {
+    background: var(--accent);
+    color: var(--bg);
+}
+.btn.secondary {
+    background: transparent;
+    color: var(--accent);
+}
+
+/* — Badge ruolo (postdoc, phd, PI...) --------------------------------------- */
+.badge {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    padding: 2px 8px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-s);
+    color: var(--text-secondary);
+    transition: border-color var(--transition), color var(--transition);
+}
+.badge.accent {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+/* — Tag (pubblicazioni, skills) --------------------------------------------- */
+.tag {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    padding: 2px 8px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-s);
+    color: var(--text-secondary);
+    transition: border-color var(--transition), color var(--transition);
+}
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+}
+
+/* — Blocco codice ----------------------------------------------------------- */
+pre {
+    background: var(--bg-dark);
+    border-radius: var(--radius-m);
+    color: var(--bg);
+    padding: 40px;
+    font-family: var(--font-mono);
+    font-weight: 600;
+    line-height: 1.8;
+    overflow-x: auto;
+}
+/* syntax highlight */
+.kw  { color: var(--accent-yellow); }
+.var { color: var(--accent-blue); }
+
+/* — Card -------------------------------------------------------------------- */
+.card {
+    transition: transform var(--transition);
+}
+.card:hover {
+    transform: translateX(6px);
+}
+.card h3 {
+    margin-bottom: var(--space-s);
+    transition: color var(--transition);
+}
+.card:hover h3 {
+    color: var(--accent-blue);
+}
+
+/* — Separatore orizzontale -------------------------------------------------- */
+.divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: var(--space-xl) 0;
+}
+
+/* Gruppi bottoni */
+.btn-group {
+    margin-top: var(--space-xl);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-l);
+}
+
+
+/* ── 6. INTERAZIONI — arrow prefix ───────────────────────────────────────── */
+/*
+   Pattern riusabile: aggiunge ">" animato prima di qualsiasi elemento.
+   Usato su: card h3, nav link, contact link, publication title, member name.
+   Applicare la classe .arrow-hover al contenitore, .arrow-target al testo.
+*/
+.arrow-hover {
+    position: relative;
+    transition: transform var(--transition);
+}
+.arrow-hover:hover {
+    transform: translateX(6px);
+}
+.arrow-target {
+    position: relative;
+    display: inline-block;
+    transition: color var(--transition);
+}
+.arrow-target::before {
+    content: ">\00a0";
+    display: inline-block;
+    transform: translateX(-6px);
+    opacity: 0;
+    transition: transform var(--transition), opacity var(--transition);
+}
+.arrow-hover:hover .arrow-target {
+    color: var(--accent-blue);
+}
+.arrow-hover:hover .arrow-target::before {
+    transform: translateX(0);
+    opacity: 1;
+}
+.arrow-hover:hover .tag,
+.arrow-hover:hover .badge {
+    border-color: var(--accent-blue);
+    color: var(--accent-blue);
+}
+
+/* Link inline con underline animata */
+.link-animated {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    transition: color var(--transition), transform var(--transition);
+}
+.link-animated:hover {
+    color: var(--accent-blue);
+    transform: translateX(3px);
+}
+.link-animated::after {
+    content: "";
+    position: absolute;
+    left: 0; top: 100%;
+    width: 0; height: 1px;
+    background: var(--accent-blue);
+    transition: width var(--transition);
+}
+.link-animated:hover::after {
+    width: 100%;
+}
+
+
+/* ── 7. HEADER & NAV ──────────────────────────────────────────────────────── */
+header {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: var(--bg-dark);
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    transition: height var(--transition-slow);
+}
+header.shrink {
+    height: 60px;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    width: 50px;
+    transition: width var(--transition-slow);
+}
+header.shrink #logo {
+    width: 40px;
+}
+
+.nav a {
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    margin: 0 10px;
+    color: var(--border);
+    display: inline-block;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: var(--space-m);
+}
+.header-right .icon,
+#switch-lang {
+    font-size: 17px;
+    color: var(--border);
+    font-weight: 700;
+}
+
+/* Nav link animato */
+.headerBtn {
+    position: relative;
+    transition: transform var(--transition), color var(--transition);
+}
+.headerBtn:hover {
+    transform: translateX(2px);
+    color: var(--accent-blue);
+}
+.headerBtn:active {
+    transform: translateY(1px) translateX(2px);
+}
+.headerBtn::before {
+    content: ">\00a0";
+    display: inline-block;
+    transform: translateX(-6px);
+    opacity: 0;
+    transition: transform var(--transition), opacity var(--transition);
+}
+.headerBtn:hover::before {
+    transform: translateX(0);
+    opacity: 1;
+}
+.headerBtn::after {
+    content: "";
+    position: absolute;
+    left: 0; top: 90%;
+    width: 0; height: 1px;
+    background: var(--accent-blue);
+    transition: width var(--transition);
+}
+.headerBtn:hover::after {
+    width: 100%;
+}
+
+.hamburger {
+    display: none;
+    font-family: var(--font-mono);
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--border);
+    cursor: pointer;
+}
+
+
+/* ── 8. HERO ──────────────────────────────────────────────────────────────── */
+
+/* Hero homepage */
+.hero-home {
+    top: -250px;
+    min-height: 100vh;
+    height: max-content;
+    display: flex;
+    padding-top: 400px;
+    background: var(--bg);
+}
+
+/* Animazione CODÆ */
+.cod { font-weight: 300; }
+#ae  { font-weight: 500; color: var(--accent); }
+
+.cursor {
+    animation: blink 1.5s infinite;
+}
+.cursor-code {
+    animation: blink 1s infinite;
+}
+@keyframes blink {
+    0%, 40%, 100% { opacity: 1; }
+    50%, 90%      { opacity: 0; }
+}
+
+.hero h2 {
+    margin-top: var(--space-m);
+    max-width: 500px;
+}
+.hero > .container > p {
+    margin-top: var(--space-xl);
+    max-width: 700px;
+    font-size: 1.2rem;
+}
+
+
+/* ── 9. FOOTER ────────────────────────────────────────────────────────────── */
+footer {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    position: sticky;
+    background: var(--bg);
+}
+footer .container {
+    border-top: 2px solid var(--border-subtle);
+    padding: var(--space-m) var(--space-xl) var(--space-l);
+    width: fit-content;
+    text-align: center;
+}
+footer p {
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+}
+footer .mono {
+    margin-top: var(--space-l);
+}
+
+
+/* ── 10. UTILITIES ────────────────────────────────────────────────────────── */
+
+/* About grid */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+.about-grid p {
+    margin-top: var(--space-m);
+    font-size: 1.2rem;
+}
+
+/* Mappa + contatti */
+.info {
+    display: flex;
+    margin-top: var(--space-xl);
+    gap: 100px;
+    height: 400px;
+}
+.map      { flex: 2; }
+.map iframe { width: 100%; height: 100%; border: 0; }
+.contact  { flex: 1; }
+.contact p {
+    display: flex;
+    align-items: center;
+    gap: var(--space-s);
+    margin-bottom: var(--space-s);
+}
+.contact i {
+    width: 18px;
+    text-align: center;
+    color: var(--accent);
+    flex-shrink: 0;
+}
+
+/* Code block nel pre — responsive */
+@media (max-width: 900px) {
+    .code-block { display: none; }
+}
+
+
+/* ── 11. RESPONSIVE ───────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+
+    .hero-home {
+        top: -150px;
+        padding-top: 250px;
+    }
+
+    .about-grid,
+    .grid-2,
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .info {
+        flex-direction: column-reverse;
+        gap: var(--space-xl);
+        height: auto;
+        margin-bottom: var(--space-xl);
+    }
+
+    /* Nav mobile */
+    .nav,
+    .header-right {
+        transition: transform 0.3s ease;
+        transform: translateX(100%);
+    }
+    .nav {
+        position: fixed;
+        top: 0; right: 0;
+        min-height: 100vh;
+        height: max-content;
+        width: 170px;
+        padding: var(--space-m);
+        text-align: center;
+        background: var(--bg-dark);
+        z-index: 99;
+    }
+    .nav a { display: block; margin: var(--space-m) 0; }
+    .header-right {
+        position: fixed;
+        justify-content: center;
+        top: 90svh; right: 0;
+        width: 170px;
+        gap: 30px;
+        padding: var(--space-m);
+        z-index: 99;
+    }
+    .nav.active,
+    .header-right.active {
+        transform: translateX(0);
+    }
+    .hamburger { display: block; }
+}

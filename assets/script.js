@@ -55,9 +55,9 @@ if (codEl && aeEl) {
         }
     }
 
-    window.onload = function () {
+    document.addEventListener("DOMContentLoaded", function () {
         setTimeout(typeWriter, 1500);                               // Pausa iniziale
-    };
+    });
 }
 
 // Censura mail ------------------------------------------------------------------------------------
@@ -66,12 +66,20 @@ if (emailLink) {
     const u = "info";                                               // nome mail
     const d = "tuoufficio.it";                                      // dominio
     emailLink.href = "mailto:" + u + "@" + d;
-    emailLink.textContent = u + "@" + d;
+    emailLink.innerHTML = '<i class="fa-solid fa-envelope"></i> ' + u + "@" + d;
+}
+
+const emailLinkFooter = document.getElementById("email-link-footer");
+if (emailLinkFooter) {
+    const u = "info";
+    const d = "tuoufficio.it";
+    emailLinkFooter.href = "mailto:" + u + "@" + d;
+    emailLinkFooter.innerHTML = u + "@" + d;
 }
 
 // stiky lungo -------------------------------------------------------------------------------------
 function aggiornaStickyTop() {
-    document.querySelectorAll('section:not(.hero)').forEach(section => {
+    document.querySelectorAll('section:not(.hero-home )').forEach(section => {
         const altezzaContenuto = section.scrollHeight;
         const altezzaViewport = window.innerHeight;
 
@@ -86,12 +94,32 @@ function aggiornaStickyTop() {
 aggiornaStickyTop();
 window.addEventListener('resize', aggiornaStickyTop);
 
-// PUBBLICAZIONI -----------------------------------------------------------------------------
+// TOGGLE EXPAND -----------------------------------------------------------------------------------
+function togglePub(headerEl) {
+    headerEl.closest('.item').classList.toggle('open');
+}
+
+// PUBBLICAZIONI -----------------------------------------------------------------------------------
 const pubList = document.getElementById('pub-list');
 
 if (pubList && typeof publications !== 'undefined') {
 
     // RENDER ------------------------------------------------------
+    function highlightBibtex(raw) {
+        const escaped = raw
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;');
+
+        return escaped
+            // @article, @inproceedings, ecc.
+            .replace(/(@\w+)/g, '<span class="var">$1</span>')
+            // tutto tra &quot;...&quot; incluse le &quot;
+            .replace(/(&quot;)(.*?)(&quot;)/g, '<span class="kw">$1$2$3</span>')
+            // tutto tra graffe interne incluse le graffe
+            .replace(/(\{)([^{}]+)(\})/g, '<span class="kw">$1$2$3</span>');
+    }
     function buildList(pubs) {
         pubList.innerHTML = '';
 
@@ -111,51 +139,47 @@ if (pubList && typeof publications !== 'undefined') {
 
         years.forEach(year => {
             const label = document.createElement('div');
-            label.className = 'year-group-label';
+            label.className = 'section-label';                      // +line (opzionale)
             label.textContent = `// ${year}`;
             pubList.appendChild(label);
 
             byYear[year].forEach((pub, idx) => {
                 const item = document.createElement('div');
-                item.className = 'pub-item';
+                item.className = 'item';
                 item.dataset.type = pub.type;
                 item.dataset.text = `${pub.title} ${pub.authors} ${pub.tags.join(' ')}`.toLowerCase();
 
                 item.innerHTML = `
-                    <div class="pub-header" onclick="togglePub(this)">
-                        <div class="pub-meta">
-                            <div class="pub-title">${pub.title}</div>
-                            <div class="pub-authors">${pub.authors} [${pub.year}]</div>
-                            <div class="pub-tags">
-                                <span class="pub-type">@${pub.type.replace(' ', '')}</span>
+                    <div class="shift card-open color" onclick="togglePub(this)">
+                        <div class="card">
+                            <h3>${pub.title}</h3>
+                            <p>${pub.authors} [${pub.year}]</p>
+                            <div class="tags">
+                                <span class="tag accent">@${pub.type.replace(' ', '')}</span>
                                 ${pub.tags.map(t => `<span class="tag">${t}</span>`).join('')}
                             </div>
                         </div>
-                        <div class="pub-toggle">&gt;</div>
+                        <h3 class="arrow vertical"></h3>
                     </div>
-                    <div class="pub-body">
-                        <div class="pub-body-inner">
-                            <div class="pub-body-content">
-                                <p class="pub-abstract">${pub.abstract}</p>
-                                <div class="bibtex-label">// BibTeX</div>
-                                <div class="bibtex-wrap">
-                                    <pre id="bib-${year}-${idx}">${pub.bibtex}</pre>
-                                    <button class="copy-btn" onclick="copyBib('bib-${year}-${idx}', this)">copy</button>
-                                </div>
-                                <a class="pub-doi" href="https://doi.org/${pub.doi}" target="_blank">
+                    <div class="expand">
+                        <div class="expand-inner spaced">
+                            <p class="paragraph">${pub.abstract}</p>
+                            <div class="section-label" style="margin-top: var(--space-m);">// BibTeX</div>
+                            <div class="bibtex">
+                                <pre id="bib-${year}-${idx}">${highlightBibtex(pub.bibtex)}</pre>
+                                <button class="copy-btn" onclick="copyBib('bib-${year}-${idx}', this)">copy</button>
+                            </div>
+                            <p class="link">
+                                <a href="https://doi.org/${pub.doi}" class="link underline" target="_blank" style="font-size: var(--size-s)">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
                                     doi: ${pub.doi}
                                 </a>
-                            </div>
+                            </p>
                         </div>
                     </div>`;
                 pubList.appendChild(item);
             });
         });
-    }
-
-    // TOGGLE EXPAND -----------------------------------------------
-    function togglePub(headerEl) {
-        headerEl.closest('.pub-item').classList.toggle('open');
     }
 
     // COPY BIBTEX -------------------------------------------------
@@ -173,17 +197,17 @@ if (pubList && typeof publications !== 'undefined') {
 
     function applyFilters() {
         let visible = 0;
-        document.querySelectorAll('.pub-item').forEach(item => {
+        document.querySelectorAll('.item').forEach(item => {
             const typeMatch   = activeType === 'all' || item.dataset.type === activeType;
             const searchMatch = !activeSearch || item.dataset.text.includes(activeSearch);
             item.classList.toggle('hidden', !(typeMatch && searchMatch));
             if (typeMatch && searchMatch) visible++;
         });
 
-        document.querySelectorAll('.year-group-label').forEach(label => {
-            let next = label.nextElementSibling;
-            let hasVisible = false;
-            while (next && !next.classList.contains('year-group-label')) {
+            document.querySelectorAll('.section-label').forEach(label => {
+                let next = label.nextElementSibling;
+                let hasVisible = false;
+                while (next && !next.classList.contains('section-label')) {
                 if (!next.classList.contains('hidden')) hasVisible = true;
                 next = next.nextElementSibling;
             }

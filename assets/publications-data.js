@@ -13,12 +13,8 @@
 //         doi: "10.xxxx/xxxxxx",
 //         tags: ["tag1", "tag2"],
 //         abstract: "Testo dell'abstract...",
-//         bibtex: `@article{rossi2025titolo,
-//   author  = "Rossi, M. and Bianchi, L.",
-//   title   = "Titolo dell'articolo",
-//   journal = "Nome della rivista",
-//   year    = "2025",
-//   doi     = "10.xxxx/xxxxxx"
+//         bibtex: `
+//
 // }`
 //     },
 //
@@ -34,13 +30,18 @@ const publications = [
         doi: "10.1061/JSENDH.STENG-12345",
         tags: ["optimization", "concrete", "adaptive systems"],
         abstract: "This paper presents a novel framework for adaptive concrete systems that leverage real-time structural feedback to optimize load distribution. The proposed methodology integrates sensor data with finite element models to dynamically adjust structural parameters, resulting in a 23% improvement in load-bearing efficiency compared to conventional designs.",
-        bibtex: `@article{rossi2026adaptive,
-  author  = "Rossi, M. and Bianchi, L. and Verdi, A.",
-  title   = "Adaptive Concrete Systems for High-Performance Structures",
-  journal = "Journal of Structural Engineering",
-  year    = "2026",
-  doi     = "10.1061/JSENDH.STENG-12345"
-}`
+        bibtex: `
+@article{patil_state_2012,
+  title     = {State of art review-base isolation systems for structures},
+  author    = {Patil, SJ and Reddy, GR},
+  journal   = {International journal of emerging technology and advanced engineering},
+  volume    = {2},
+  number    = {7},
+  pages     = {438--453},
+  year      = {2012},
+  publisher = {Citeseer}
+}
+`
     },
     {
         year: 2025,
