@@ -30,18 +30,18 @@
 // -------------------------------------------------------------------------------------------------
 
 const publications = [
-    {   // @article{giacometti_crack_2026,
+    {   // @inproceedings{giacometti_crack_2026,
         year:   2026,
         title:  "Crack pattern scenarios in masonry structures",
         authors:"Riccardo Giacometti, Nicola Grillanda, Vincenzo Mallardo",
-        type:   "journal",
+        type:   "conference",
         venue:  "Procedia Structural Integrity",
         doi:    "10.1016/j.prostr.2026.02.022",
         tags:   ["Differential settlements", "Half-space fundamental solution", "Homogenization", "Limit Analysis", "No-tension material"],
         abstract: "Historical masonry structures constitute a vast array of the historical cultural heritage worldwide. The interest in their preservation has been pushing researchers to develop theoretical and numerical methodologies for the structural assessment of such constructions. Two are the main sources of damage in masonry structures: dynamic actions and differential settlements. The former are mainly related to the seismic events and to the traffic-induced vibrations, the former can be caused by different phenomena such as tunnelling operations, subway construction, underground car park insertions, soil weakening due to pipe breakage, scouring, etc. Both problems pose modelling issues. The masonry cannot be modelled as an elastic or elastic-plastic material as it is an assembly of rigid or quasi-rigid bricks in mostly unilateral contact with finite friction. The lack of tension is particularly realistic for historic masonry structures where the mortar layers have strongly deteriorated. The foundation is frequently a simple contact between masonry and soil with no bending-resistant beam between them. Based on some experiences of the authors Alessandri et al. (2014), Tiberti et al. (2020), Mallardo and Iannuzzo (2025), Grillanda and Mallardo (2025), the present contribution intends to present some recent results on the modelling of the masonry structure and on the influence of the soil on the masonry behaviour. With reference to seismic action, the masonry is described by an upper bound limit analysis numerical approach currently under study. The masonry continuous model is discretized with planar elements whose kinematics is composed of a rigid body motion and a plastic deformation. An homogenization procedure is applied. The homogenized plastic strain rates provide a reliable representation of the cracks on the masonry. The problem can be written as a linear programming problem. Optimization of the compatible plastic strain rate distribution and minimization of the load factor can be achieved through a simple iterative local mesh refinement. Furthermore, a novel approach is presented to investigate the effects of differential settlements on two and three dimensional masonry structures by explicitly coupling the soil with the masonry structure while still considered as composed of no-tension material. The soil behaviour is included through a boundary integral approach, which avoids mesh discretisation issues. Some recent results will be presented to show the efficiency of both the approaches.",
         id:     "giacometti_crack_2026",
         bibtex:
-`@article{giacometti_crack_2026,
+`@inproceedings{giacometti_crack_2026,
     title   = {Crack pattern scenarios in masonry structures},
     journal = {Procedia Structural Integrity},
     author  = {Giacometti, Riccardo and Grillanda, Nicola and Mallardo, Vincenzo},
