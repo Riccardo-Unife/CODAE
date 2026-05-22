@@ -35,7 +35,6 @@
 
     /* Ombre */
     --shadow:           0 0 20px #0000001a;
-    --shadow-strong:    0 5px 25px #00000033;
 
     /* -- GRAFICA ----------------------------------------------- */
     /* Border radius */
@@ -164,6 +163,25 @@ p {                                                                 /* Testo bod
     hyphens:        auto;
     margin-bottom:  var(--space-m);
 }
+
+.long {
+  max-height: 100px;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.c_toggle::before {
+  content:        "Read more";
+}
+#toggle1:checked ~ .long,
+#toggle2:checked ~ .long,
+#toggle3:checked ~ .long,
+#toggle4:checked ~ .long { max-height: 1000px; }
+#toggle1:checked ~ .c_toggle::before,
+#toggle2:checked ~ .c_toggle::before,
+#toggle3:checked ~ .c_toggle::before,
+#toggle4:checked ~ .c_toggle::before { content: "Read less"; }
+.long.expanded { max-height: 1000px; }
 
 .mono {                                                             /* Testo specifiche */
     font-size:      var(--size-s);
@@ -309,11 +327,10 @@ footer {
 }
 footer .container {
     padding:        var(--space-s) var(--space-xl) var(--space-m) var(--space-xl);
-    width:          fit-content;
+    /* width:          fit-content; */
     text-align:     center;
 }
 footer .mono {
-    margin-top:     var(--space-m);
     color:          var(--border);
 }
 footer .link {
@@ -325,7 +342,7 @@ footer .link {
 }
 
 footer .line {                                                    /* Titolo sezione */
-    padding:        var(--space-l) 0 var(--space-s);
+    padding:        var(--space-s) 0;
     border-bottom:  2px solid var(--border-subtle);
     margin-bottom:  0;
 }
@@ -333,7 +350,7 @@ footer .line {                                                    /* Titolo sezi
 .footer-nav {
     display:        flex;
     justify-content:space-evenly;
-    padding:        var(--space-m) 0;
+    margin:         var(--space-l) 0;
 }
 
 /* -- 7. COMPONENTI ----------------------------------------------------------------------------- */
@@ -436,6 +453,12 @@ input[type="text"] {                                                /* Casella d
 }
 .item.hidden { display: none; }                                     /* Nasconde con filtro */
 
+.team,
+.item {                                                             /* Margine scroll da link */
+    scroll-margin-top: var(--space-xxl);
+    margin-bottom: var(--space-l);
+}
+
 .divider {                                                          /* Separatore orizzontale */
     border:         none;
     border-top:     1px solid var(--border);
@@ -497,7 +520,7 @@ pre {                                                               /* codice ho
 /* -- 8. ANIMAZIONI ----------------------------------------------------------------------------- */
 /* Arrow prefix */
 .shift              { transition:   all var(--transition);}
-.shift .arrow       { margin-left:  -20px               }           /* Rientro testo */
+.shift .arrow       { text-indent:  -10px;              }           /* Rientro testo */
 .shift:hover        { transform:    translateX(6px)     }           /* Spostamento */
 .shift:hover .arrow { color:        var(--accent-blue)  }           /* Colore */
 .arrow::before {                                                    /* Simbolo > nascosto */

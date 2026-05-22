@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CODAE – Design System</title>
+    <title>CODAE - Design System</title>
 
     <link rel="stylesheet" href="assets/style.css">
     <link rel="icon" href="logo/logo_codae.svg?v=1" type="image/svg+xml">
@@ -15,11 +15,32 @@
 
     <style>
         /* Design system only — non toccare style.css */
+        .ds-row {
+            display: flex;
+            /* flex-wrap: wrap; */
+            gap: var(--space-l);
+            /* align-items: flex-start; */
+            margin-bottom: var(--space-l);
+            align-items: center;
+        }
+        .ds-block {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-xs);
+            align-items: center;
+        }
+        .ds-swatch {
+            width: 130px;
+            height: 70px;
+            background: var(--bg);
+            border-radius: var(--radius-m);
+            border: 1px solid var(--accent);
+        }
+
+/* ------ */
+
         .ds-page {
             padding: 120px 0 var(--space-xxl);
-        }
-        .ds-section {
-            padding: var(--space-xxl) 0 0;
         }
         .ds-section + .ds-section {
             border-top: 1px solid var(--border-subtle);
@@ -32,24 +53,6 @@
             margin-bottom: var(--space-s);
             letter-spacing: 0.08em;
             text-transform: uppercase;
-        }
-        .ds-row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: var(--space-l);
-            align-items: flex-start;
-            margin-bottom: var(--space-l);
-        }
-        .ds-block {
-            display: flex;
-            flex-direction: column;
-            gap: var(--space-xs);
-        }
-        .ds-swatch {
-            width: 80px;
-            height: 80px;
-            border-radius: var(--radius-m);
-            border: 1px solid var(--border-subtle);
         }
         .ds-swatch-name {
             font-size: var(--size-xs);
@@ -123,16 +126,28 @@
 
 <body>
 
-    <!-- HEADER (reale) -->
+    <!-- HEADER ----------------------------------------------------------------------------------->
     <header>
         <div class="container">
-            <a href="index.html"><img src="logo/logo_codae.svg" alt="Logo" id="logo"></a>
+            <a href="index.html">
+                <img src="logo/logo_codae.svg" alt="Logo" id="logo">
+            </a>
             <nav class="nav">
-                <a href="research/" class="shift"><span class="arrow underline">Research</span></a>
-                <a href="teaching/" class="shift"><span class="arrow underline">Teaching</span></a>
-                <a href="publications/" class="shift"><span class="arrow underline">Publications</span></a>
-                <a href="tools/" class="shift"><span class="arrow underline">Tools</span></a>
-                <a href="team/" class="shift"><span class="arrow underline">Team</span></a>
+                <a href="research/" class="shift">
+                    <span class="arrow underline">Research</span>
+                </a>
+                <a href="teaching/" class="shift">
+                    <span class="arrow underline">Teaching</span>
+                </a>
+                <a href="publications/" class="shift">
+                    <span class="arrow underline">Publications</span>
+                </a>
+                <a href="tools/" class="shift">
+                    <span class="arrow underline">Tools</span>
+                </a>
+                <a href="team/" class="shift">
+                    <span class="arrow underline">Team</span>
+                </a>
             </nav>
             <div class="header-right">
                 <a href="https://linkedin.com" class="icon color" target="_blank">
@@ -144,77 +159,218 @@
         </div>
     </header>
 
-    <div class="ds-page">
+    <!-- HERO ------------------------------------------------------------------------------------->
+    <section class="hero">
         <div class="container">
+            <h1 class="section-title">&gt; Design System <span class="cursor">_</span></h1>
+            <h2>Riferimento visivo per componenti, token e pattern usati nel sito CODAE.</h2>
+            <p>design-system.html — v1.0</p>
+        </div>
+    </section>
 
-            <!-- TITOLO -->
-            <p class="mono">design-system.html — v1.0</p>
-            <h1 class="section-title" style="margin: var(--space-m) 0 var(--space-s);">&gt; Design System <span class="cursor">_</span></h1>
-            <p class="paragraph" style="max-width: 600px;">
-                Riferimento visivo per tutti i componenti, token e pattern usati nel sito CODAE.
-                Questo file legge direttamente <code>assets/style.css</code> — nessun override.
-            </p>
-
-            <!-- ============================================================ -->
-            <!-- 1. COLORI -->
-            <!-- ============================================================ -->
-            <div class="ds-section">
-                <div class="section-label">01 // Color Tokens</div>
-
-                <div class="ds-label">Base</div>
-                <div class="ds-row">
-                    <div class="ds-block">
-                        <div class="ds-swatch" style="background: var(--bg); border: 1px solid var(--border);"></div>
-                        <span class="ds-swatch-name">--bg</span>
-                        <span class="ds-swatch-value">#F9F9F9</span>
-                    </div>
-                    <div class="ds-block">
-                        <div class="ds-swatch" style="background: var(--bg-dark);"></div>
-                        <span class="ds-swatch-name">--bg-dark</span>
-                        <span class="ds-swatch-value">#272933</span>
-                    </div>
-                    <div class="ds-block">
-                        <div class="ds-swatch" style="background: var(--text-primary);"></div>
-                        <span class="ds-swatch-name">--text-primary</span>
-                        <span class="ds-swatch-value">#272933</span>
-                    </div>
-                    <div class="ds-block">
-                        <div class="ds-swatch" style="background: var(--text-secondary);"></div>
-                        <span class="ds-swatch-name">--text-secondary</span>
-                        <span class="ds-swatch-value">#272933 66%</span>
-                    </div>
-                    <div class="ds-block">
-                        <div class="ds-swatch" style="background: var(--border);"></div>
-                        <span class="ds-swatch-name">--border</span>
-                        <span class="ds-swatch-value">#CCCCCC</span>
-                    </div>
-                    <div class="ds-block">
-                        <div class="ds-swatch" style="background: var(--border-subtle);"></div>
-                        <span class="ds-swatch-name">--border-subtle</span>
-                        <span class="ds-swatch-value">#CCCCCC 33%</span>
-                    </div>
+    <!-- 1. COLORI -------------------------------------------------------------------------------->
+    <section>
+        <div class="container">
+            <div class="section-label">01 // Color Tokens</div>
+            <p>Base</p>
+            <div class="ds-row">
+                <div class="card">
+                    <div class="ds-swatch" style="background: var(--bg); border: 1px solid var(--border);"></div>
+                    <p class="mono">--bg</p>
+                    <p class="mono">#F9F9F9</p>
                 </div>
-
-                <div class="ds-label">Accenti</div>
-                <div class="ds-row">
-                    <div class="ds-block">
-                        <div class="ds-swatch" style="background: var(--accent);"></div>
-                        <span class="ds-swatch-name">--accent</span>
-                        <span class="ds-swatch-value">#A8384D</span>
-                    </div>
-                    <div class="ds-block">
-                        <div class="ds-swatch" style="background: var(--accent-blue);"></div>
-                        <span class="ds-swatch-name">--accent-blue</span>
-                        <span class="ds-swatch-value">#4D95FA</span>
-                    </div>
-                    <div class="ds-block">
-                        <div class="ds-swatch" style="background: var(--accent-yellow);"></div>
-                        <span class="ds-swatch-name">--accent-yellow</span>
-                        <span class="ds-swatch-value">#FAB24B</span>
-                    </div>
+                <div class="ds-block">
+                    <div class="ds-swatch" style="background: var(--bg-dark); border: 1px solid var(--border);"></div>
+                    <p class="mono">--bg-dark</p>
+                    <p class="mono">#272933</p>
+                </div>
+                <div class="ds-block">
+                    <div class="ds-swatch" style="background: var(--text-primary); border: 1px solid var(--border);"></div>
+                    <p class="mono">--text-primary</p>
+                    <p class="mono">#272933</p>
+                </div>
+                <div class="ds-block">
+                    <div class="ds-swatch" style="background: var(--text-secondary); border: 1px solid var(--border);"></div>
+                    <p class="mono">--text-secondary</p>
+                    <p class="mono">#272933a8</p>
+                </div>
+                <div class="ds-block">
+                    <div class="ds-swatch" style="background: var(--border); border: 1px solid var(--border);"></div>
+                    <p class="mono">--border</p>
+                    <p class="mono">#CCCCCC</p>
+                </div>
+                <div class="ds-block">
+                    <div class="ds-swatch" style="background: var(--border-subtle); border: 1px solid var(--border);"></div>
+                    <p class="mono">--border-subtle</p>
+                    <p class="mono">#CCCCCC54</p>
                 </div>
             </div>
 
+            <p>Accent</p>
+            <div class="ds-row">
+                <div class="ds-block">
+                    <div class="ds-swatch" style="background: var(--accent); border: none;"></div>
+                    <p class="mono">--accent</p>
+                    <p class="mono">#A8384D</p>
+                </div>
+                <div class="ds-block">
+                    <div class="ds-swatch" style="background: var(--accent-blue); border: none;"></div>
+                    <p class="mono">--accent-blue</p>
+                    <p class="mono">#4D95FA</p>
+                </div>
+                <div class="ds-block">
+                    <div class="ds-swatch" style="background: var(--accent-yellow); border: none;"></div>
+                    <p class="mono">--accent-yellow</p>
+                    <p class="mono">#FAB24B</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="section-label">02 // Graphic</div>
+            <p>Shadow</p>
+            <div class="ds-row">
+                <div class="ds-block">
+                    <div class="ds-swatch" style="border: none; box-shadow: var(--shadow);"></div>
+                    <p class="mono">--shadow</p>
+                    <p class="mono">0 0 20px</p>
+                    <p class="mono">#0000001a</p>
+                </div>
+            </div>
+
+            <p>Radius</p>
+            <div class="ds-row">
+                <div class="ds-block">
+                    <div class="ds-swatch" style="border-radius: var(--radius-s);"></div>
+                    <p class="mono">--radius-s</p>
+                    <p class="mono">3px</p>
+                </div>
+                <div class="ds-block">
+                    <div class="ds-swatch" style="border-radius: var(--radius-m);"></div>
+                    <p class="mono">--radius-m</p>
+                    <p class="mono">5px</p>
+                </div>
+            </div>
+
+            <p>Spacing</p>
+            <div class="ds-row" style="display: grid; grid-template-columns: 200px 100px 100px;">
+                <div class="ds-swatch" style="height: 5px; background: var(--accent); width: var(--space-xs);"></div>
+                <p class="mono">--space-xs</p>
+                <p class="mono">4px</p>
+            </div>
+            <div class="ds-row" style="display: grid; grid-template-columns: 200px 100px 100px;">
+                <div class="ds-swatch" style="height: 5px; background: var(--accent); width: var(--space-s);"></div>
+                <p class="mono">--space-s</p>
+                <p class="mono">8px</p>
+            </div>
+            <div class="ds-row" style="display: grid; grid-template-columns: 200px 100px 100px;">
+                <div class="ds-swatch" style="height: 5px; background: var(--accent); width: var(--space-m);"></div>
+                <p class="mono">--space-m</p>
+                <p class="mono">16px</p>
+            </div>
+            <div class="ds-row" style="display: grid; grid-template-columns: 200px 100px 100px;">
+                <div class="ds-swatch" style="height: 5px; background: var(--accent); width: var(--space-l);"></div>
+                <p class="mono">--space-l</p>
+                <p class="mono">32px</p>
+            </div>
+            <div class="ds-row" style="display: grid; grid-template-columns: 200px 100px 100px;">
+                <div class="ds-swatch" style="height: 5px; background: var(--accent); width: var(--space-xl);"></div>
+                <p class="mono">--space-xl</p>
+                <p class="mono">60px</p>
+            </div>
+            <div class="ds-row" style="display: grid; grid-template-columns: 200px 100px 100px;">
+                <div class="ds-swatch" style="height: 5px; background: var(--accent); width: var(--space-xxl);"></div>
+                <p class="mono">--space-xxl</p>
+                <p class="mono">120px</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="section-label">03 // Text</div>
+            <p>Typo</p>
+            <div class="ds-row" style="display: grid; grid-template-columns: 500px 100px 100px;">
+                <h2 style="font-family: var(--font-sans); margin: 0;">'Google Sans Flex', sans-serif</h2>
+                <p class="mono">--font-sans</p>
+            </div>
+            <div class="ds-row" style="display: grid; grid-template-columns: 500px 100px 100px;">
+                <h2 style="font-family: var(--font-mono); margin: 0;">'Google Sans Code', monospace</h2>
+                <p class="mono">--font-mono</p>
+            </div>
+
+            <p>Weight</p>
+            <div class="ds-row" style="display: grid; grid-template-columns: 300px 300px 100px 100px;">
+                <h2 style="font-family: var(--font-sans); margin: 0; font-weight: var(--weight-xs);">Google Sans Flex</h2>
+                <h2 style="font-family: var(--font-mono); margin: 0; font-weight: var(--weight-xs);">Google Sans Code</h2>
+                <p class="mono">--weight-xs</p>
+                <p class="mono">300</p>
+            </div>
+            <div class="ds-row" style="display: grid; grid-template-columns: 300px 300px 100px 100px;">
+                <h2 style="font-family: var(--font-sans); margin: 0; font-weight: var(--weight-s);">Google Sans Flex</h2>
+                <h2 style="font-family: var(--font-mono); margin: 0; font-weight: var(--weight-s);">Google Sans Code</h2>
+                <p class="mono">--weight-s</p>
+                <p class="mono">400</p>
+            </div>
+            <div class="ds-row" style="display: grid; grid-template-columns: 300px 300px 100px 100px;">
+                <h2 style="font-family: var(--font-sans); margin: 0; font-weight: var(--weight-m);">Google Sans Flex</h2>
+                <h2 style="font-family: var(--font-mono); margin: 0; font-weight: var(--weight-m);">Google Sans Code</h2>
+                <p class="mono">--weight-m</p>
+                <p class="mono">500</p>
+            </div>
+            <div class="ds-row" style="display: grid; grid-template-columns: 300px 300px 100px 100px;">
+                <h2 style="font-family: var(--font-sans); margin: 0; font-weight: var(--weight-l);">Google Sans Flex</h2>
+                <h2 style="font-family: var(--font-mono); margin: 0; font-weight: var(--weight-l);">Google Sans Code</h2>
+                <p class="mono">--weight-l</p>
+                <p class="mono">600</p>
+            </div>
+
+            <p>Line height</p>
+            <div class="ds-row" style="display: grid; grid-template-columns: 300px 300px 100px 100px;">
+                <p style="font-family: var(--font-sans); line-height: var(--line-m);">Text text<br>Text text<br>Text text</p>
+                <p style="font-family: var(--font-mono); line-height: var(--line-m);">Text text<br>Text text<br>Text text</p>
+                <p class="mono">--line-m</p>
+                <p class="mono">1</p>
+            </div>
+            <div class="ds-row" style="display: grid; grid-template-columns: 300px 300px 100px 100px;">
+                <p style="font-family: var(--font-sans); line-height: var(--line-xl);">Text text<br>Text text<br>Text text</p>
+                <p style="font-family: var(--font-mono); line-height: var(--line-xl);">Text text<br>Text text<br>Text text</p>
+                <p class="mono">--line-xl</p>
+                <p class="mono">1.6</p>
+            </div>
+
+            <p>Size</p>
+            <div class="ds-row" style="display: grid; grid-template-columns: 300px 300px 100px 100px;">
+                <p style="font-family: var(--font-sans); font-size: var(--size-xs)">Text text</p>
+                <p style="font-family: var(--font-mono); font-size: var(--size-xs)">Text text</p>
+                <p class="mono">--size-xs</p>
+                <p class="mono">0.75rem</p>
+            </div>
+            <div class="ds-row" style="display: grid; grid-template-columns: 300px 300px 100px 100px;">
+                <p style="font-family: var(--font-sans); font-size: var(--size-s)">Text text</p>
+                <p style="font-family: var(--font-mono); font-size: var(--size-s)">Text text</p>
+                <p class="mono">--size-s</p>
+                <p class="mono">0.85rem</p>
+            </div>
+            <div class="ds-row" style="display: grid; grid-template-columns: 300px 300px 100px 100px;">
+                <p style="font-family: var(--font-sans); font-size: var(--size-m)">Text text</p>
+                <p style="font-family: var(--font-mono); font-size: var(--size-m)">Text text</p>
+                <p class="mono">--size-m</p>
+                <p class="mono">1rem</p>
+            </div>
+            <div class="ds-row" style="display: grid; grid-template-columns: 300px 300px 100px 100px;">
+                <p style="font-family: var(--font-sans); font-size: var(--size-l)">Text text</p>
+                <p style="font-family: var(--font-mono); font-size: var(--size-l)">Text text</p>
+                <p class="mono">--size-l</p>
+                <p class="mono">1.5rem</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="ds-page">
+        <div class="container">
             <!-- ============================================================ -->
             <!-- 2. TIPOGRAFIA -->
             <!-- ============================================================ -->

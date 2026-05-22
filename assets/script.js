@@ -63,18 +63,42 @@ if (codEl && aeEl) {
 // Censura mail ------------------------------------------------------------------------------------
 const emailLink = document.getElementById("email-link");
 if (emailLink) {
-    const u = "info";                                               // nome mail
-    const d = "tuoufficio.it";                                      // dominio
+    const u = "codae";                                               // nome mail
+    const d = "unife.it";                                      // dominio
     emailLink.href = "mailto:" + u + "@" + d;
     emailLink.innerHTML = '<i class="fa-solid fa-envelope"></i> ' + u + "@" + d;
 }
 
 const emailLinkFooter = document.getElementById("email-link-footer");
 if (emailLinkFooter) {
-    const u = "info";
-    const d = "tuoufficio.it";
+    const u = "codae";
+    const d = "unife.it";
     emailLinkFooter.href = "mailto:" + u + "@" + d;
     emailLinkFooter.innerHTML = u + "@" + d;
+}
+
+const emailLinkMallardo = document.getElementById("email-link-mallardo");
+if (emailLinkMallardo) {
+    const u = "mlv";
+    const d = "unife.it";
+    emailLinkMallardo.href = "mailto:" + u + "@" + d;
+    emailLinkMallardo.innerHTML = '<i class="fa-solid fa-envelope"></i> ' +  u + "@" + d;
+}
+
+const emailLinkGrillanda = document.getElementById("email-link-grillanda");
+if (emailLinkGrillanda) {
+    const u = "grlncl";
+    const d = "unife.it";
+    emailLinkGrillanda.href = "mailto:" + u + "@" + d;
+    emailLinkGrillanda.innerHTML = '<i class="fa-solid fa-envelope"></i> ' +  u + "@" + d;
+}
+
+const emailLinkGiacometti = document.getElementById("email-link-giacometti");
+if (emailLinkGiacometti) {
+    const u = "gcmrcr";
+    const d = "unife.it";
+    emailLinkGiacometti.href = "mailto:" + u + "@" + d;
+    emailLinkGiacometti.innerHTML = '<i class="fa-solid fa-envelope"></i> ' +  u + "@" + d;
 }
 
 // stiky lungo -------------------------------------------------------------------------------------
@@ -146,6 +170,7 @@ if (pubList && typeof publications !== 'undefined') {
             byYear[year].forEach((pub, idx) => {
                 const item = document.createElement('div');
                 item.className = 'item';
+                item.id = `${pub.id}`;
                 item.dataset.type = pub.type;
                 item.dataset.text = `${pub.title} ${pub.authors} ${pub.tags.join(' ')}`.toLowerCase();
 
@@ -242,3 +267,17 @@ if (pubList && typeof publications !== 'undefined') {
     // INIT --------------------------------------------------------
     buildList(publications);
 }
+
+// Anchor link — apre accordion da URL hash
+function openFromHash() {
+    if (!window.location.hash) return;
+    const target = document.querySelector(window.location.hash);
+    if (target && target.classList.contains('item')) {
+        target.classList.add('open');
+        setTimeout(() => {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 100);
+    }
+}
+
+document.addEventListener("DOMContentLoaded", openFromHash);
