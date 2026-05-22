@@ -154,11 +154,14 @@ h3 {                                                                /* Titoli ca
     margin-bottom:  var(--space-s);
 }
 
-p {                                                                 /* Testo body */
+p, ol, ul {                                                                 /* Testo body */
     font-size:      var(--size-m);
     font-weight:    var(--weight-s);
     line-height:    var(--line-xl);
     color:          var(--text-secondary);
+}
+ol, ul { 
+    margin-left: var(--space-l);
 }
 .paragraph {
     font-family:    var(--font-sans);

@@ -63,7 +63,7 @@ if (codEl && aeEl) {
 // Censura mail ------------------------------------------------------------------------------------
 const emailLink = document.getElementById("email-link");
 if (emailLink) {
-    const u = "codae";                                               // nome mail
+    const u = "mlv";                                               // nome mail
     const d = "unife.it";                                      // dominio
     emailLink.href = "mailto:" + u + "@" + d;
     emailLink.innerHTML = '<i class="fa-solid fa-envelope"></i> ' + u + "@" + d;
@@ -71,7 +71,7 @@ if (emailLink) {
 
 const emailLinkFooter = document.getElementById("email-link-footer");
 if (emailLinkFooter) {
-    const u = "codae";
+    const u = "mlv";
     const d = "unife.it";
     emailLinkFooter.href = "mailto:" + u + "@" + d;
     emailLinkFooter.innerHTML = u + "@" + d;
