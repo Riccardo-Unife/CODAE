@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <!-- SEO - INDICIZZAZIONE --------------------------------------------------------------------->
     <meta charset="UTF-8">
-    <meta name="description" content="Showpage CODE Computation in Design">
+    <meta name="description" content="CODAE Tools - Open-source tools and software for computational structural design developed by the research group.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CODAE</title>
+    <title>CODAE - Strumenti</title>
 
     <!-- Link alle lingue -->
-    <link rel="alternate" hreflang="it" href="../it/tools">
-    <link rel="alternate" hreflang="en" href="../tools">
+    <link rel="alternate" hreflang="it" href="../it/tools/">
+    <link rel="alternate" hreflang="en" href="../tools/">
 
     <!-- CSS e JS-->
     <link rel="stylesheet" href="../../assets/style.css">
@@ -22,168 +22,125 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
 </head>
 
 <body>
     <!-- HEADER ----------------------------------------------------------------------------------->
     <header>
         <div class="container">
-            <a href="../">
-                <img src="../../logo/logo_codae.svg" alt="Logo" id="logo">
-            </a>
+            <a href="../"><img src="../../logo/logo_codae.svg" alt="Logo" id="logo"></a>
             <nav class="nav">                                       <!-- Link schede -->
-                <a href="../research/" class="headerBtn">Research</a>
-                <a href="../teaching/" class="headerBtn">Teaching</a>
-                <a href="../publications/" class="headerBtn">Publications</a>
-                <a href="../tools/" class="headerBtn">Tools</a>
-                <a href="../team/" class="headerBtn">Team</a>
+                <a href="../research/" class="shift">
+                    <span class="arrow underline">Ricerca</span>
+                </a>
+                <a href="../teaching/" class="shift">
+                    <span class="arrow underline">Insegnamento</span>
+                </a>
+                <a href="../publications/" class="shift">
+                    <span class="arrow underline">Pubblicazioni</span>
+                </a>
+                <a href="../tools/" class="shift">
+                    <span class="arrow underline">Strumenti</span>
+                </a>
+                <a href="../team/" class="shift">
+                    <span class="arrow underline">Gruppo</span>
+                </a>
             </nav>
             <div class="header-right">                              <!-- Link social -->
-                <a href="https://linkedin.com" class="icon linkedin" target="_blank">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-                <a href="../../tools" id="switch-lang">EN</a>                 <!-- Switch lingua (js) -->
+                <!-- <a href="https://linkedin.com" class="icon color" target="_blank">
+                    <i class="fa-brands fa-square-linkedin"></i>
+                </a> -->
+                <a href="../../tools/" class="icon color">EN</a>     <!-- Switch lingua (js) -->
             </div>
-            <div class="hamburger" onclick="toggleMenu()">&lt;</div><!-- Hamburgher -->
+            <div class="hamburger" onclick="toggleMenu()">&lt; Altro</div><!-- Hamburgher -->
         </div>
     </header>
 
     <!-- HERO ------------------------------------------------------------------------------------->
     <section class="hero">
         <div class="container">
-            <h1 class="hero-title">TOOLS it</h1>
-            <h2>Computational Optimization for Design of Architecture and Engineering</h2>
-            <p>
-                A research group of the University of Ferrara<br>
-                Designing structures through algorithms, data and advanced simulation.
+            <h1 class="section-title">&gt; Strumenti <span class="cursor">_</span></h1>
+        </div>
+    </section>
+
+    <!-- TOOLS ------------------------------------------------------------------------------------>
+    <section>
+        <div class="container">
+            <!-- Applicazioni -->
+            <div class="section-label">01 // App</div>
+            <a href="https://riccardo-unife.github.io/Framely/" class="grid-2asim shift" target="_blank">
+                <img src="../../logo/logo_framely.svg" alt="Logo" style="width: 60px;">
+                <div class="card">
+                    <h3 class="arrow">Framely</h3>
+                    <p>A web app for modeling and analyzing frame structures with Active Mass Dampers</p>
+                    <div class="tags">
+                        <span class="tag accent">@web_app</span>
+                        <span class="tag">dynamic analysis</span>
+                        <span class="tag">frame structure</span>
+                    </div>
+                </div>
+            </a>
+            <a href="https://sisma-app.onrender.com/" class="grid-2asim shift" target="_blank">
+                <img src="../../logo/logo_sisma.svg" alt="Logo" style="width: 60px;">
+                <div class="card">
+                    <h3 class="arrow">Sismify</h3>
+                    <p>A web tool for generating sinusoidal earthquakes with Gaussian trends</p>
+                    <div class="tags">
+                        <span class="tag accent">@web_tool</span>
+                        <span class="tag">earthquakes</span>
+                        <span class="tag">shaking table</span>
+                    </div>
+                </div>
+            </a>
+            <p class="mono">
+                For collaborations, assistance or to report issues, feel free to get in touch.
+                <a href="mailto:mlv@unife.it" class="underline" style="font-size: var(--size-s)">
+                    <!-- <i class="fa-solid fa-arrow-up-right-from-square"></i> -->
+                    <b>Contact us.</b>
+                </a>
             </p>
-            <div class="hero-buttons">                              <!-- Bottoni principali -->
-                <a href="../research/" class="btn secondary">Explore Research</a>
-                <a href="../publications/" class="btn secondary">Publications</a>
-                <a href="../tools/" class="btn secondary">Tools</a>
-            </div>
         </div>
     </section>
-
-    <!-- ABOUT ------------------------------------------------------------------------------------>
-    <section class="panel panel1">
+    <section>
         <div class="container">
-            <div class="section-label">01 // About</div>
-            <div class="about-grid">                                <!-- Descrizione -->
-                <div>
-                    <h3>Research at the intersection of computation and structural design.</h4>
-                    <p>
-                        We investigate computational methods for structural optimization,
-                        adaptive systems and algorithmic design strategies in civil engineering.
-                    </p>
-                </div>
-                <div class="code-block">                            <!-- Codice -->
-<pre>
-<span class="kw">if</span> (<span class="var">design</span> == <span class="var">intelligent</span>) {
-    <span class="var">structure</span> = <span class="var">optimized</span>;
-} <span class="cursor-code">_</span>
-</pre>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- RESEARCH --------------------------------------------------------------------------------->
-    <section class="panel panel2">
-        <div class="container">
-            <div class="section-label">02 // Research Areas</div>
-            <div class="grid-2">                                    <!-- Parti da AGGIORNARE: -->
+            <!-- Codice -->
+            <div class="section-label">02 // In-house code</div>
+            <div>
                 <div class="card">
-                    <h3>Computational Mechanics</h3>
-                    <p>Advanced simulation and nonlinear modeling.</p>
+                    <h3>Rigid block analysis</h3>
+                    <p>A tool for collapse analysis of structures composed of rigid blocks (masonry buildings, vaults and bridges)</p>
+                    <div class="tags">
+                        <span class="tag accent">@matlab</span>
+                        <span class="tag">rigid block</span>
+                        <span class="tag">static</span>
+                    </div>
                 </div>
+                <p class="mono" style="margin-bottom: var(--space-l);">
+                    The code is available on request for research and collaboration purposes.
+                    <a href="mailto:mlv@unife.it" class="underline" style="font-size: var(--size-s)">
+                        <!-- <i class="fa-solid fa-arrow-up-right-from-square"></i> -->
+                        <b>Contact us.</b>
+                    </a>
+                </p>
+            </div>
+            <div>
                 <div class="card">
-                    <h3>Structural Optimization</h3>
-                    <p>Data-driven and parametric design workflows.</p>
+                    <h3>Dynamics of rigid blocks</h3>
+                    <p>A ready-to-use code to simulate the dynamic movement of blocks</p>
+                    <div class="tags">
+                        <span class="tag accent">@matlab</span>
+                        <span class="tag">rigid block</span>
+                        <span class="tag">dynamic</span>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3>Adaptive Systems</h3>
-                    <p>Responsive and intelligent structures.</p>
-                </div>
-                <div class="card">
-                    <h3>AI for Civil Engineering</h3>
-                    <p>Machine learning for predictive modeling.</p>
-                </div>
-            </div>
-            <div class="section-buttons">                           <!-- Bottone -->
-                <a href="../research/" class="btn primary">Show more</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- PUBLICATIONS ----------------------------------------------------------------------------->
-    <section class="panel panel3">
-        <div class="container">
-            <div class="section-label">03 // Publications</div>     <!-- Parti da AGGIORNARE: -->
-            <div class="publications">
-                <h3>Adaptive Concrete Systems</h3>
-                <p>[2026] Driven structural optimization.</p>
-            </div>
-            <div class="publications">
-                <h3>Genetic algorithms for optimized computation</h3>
-                <p>[2025] Generational optimization parameters and their influence.</p>
-            </div>
-            <div class="publications">
-                <h3>AI-based Seismic Modeling</h3>
-                <p>[2025] Predictive resilience analysis.</p>
-            </div>
-            <div class="publications">
-                <h3>Smart Materials for Energy Efficiency</h3>
-                <p>[2024] Integrating responsive composites in sustainable building design.</p>
-            </div>
-            <div class="section-buttons">                           <!-- Bottone -->
-                <a href="../publications/" class="btn primary">Show more</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- TEAM ------------------------------------------------------------------------------------->
-    <section class="panel panel4">
-        <div class="container">
-            <div class="section-label">04 // Team</div>
-            <div class="team-grid">                                 <!-- Parti da AGGIORNARE: -->
-                <div class="team-member">
-                    <h3>Dr. Maria Rossi</h3>
-                    <p>role: computational design</p>
-                </div>
-                <div class="team-member">
-                    <h3>Dr. Luca Bianchi</h3>
-                    <p>role: structural mechanics</p>
-                </div>
-                <div class="team-member">
-                    <h3>PhD. Anna Verdi</h3>
-                    <p>role: optimization algorithms</p>
-                </div>
-            </div>
-            <div class="info">
-                <div class="map">                                   <!-- Mappa -->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1414.8246674963586!2d11.6225061912806!3d44.82870806536274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477e4e42a81eaf05%3A0x3d88ddab32c898a1!2sUniversit%C3%A0%20degli%20Studi%20di%20Ferrara%20-%20Dipartimento%20di%20Architettura!5e0!3m2!1sit!2sit!4v1773043558312!5m2!1sit!2sit" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="contact">                               <!-- Contatti -->
-                    <h3>Contact</h3>
-                    <p>
-                        <i class="fa-solid fa-location-dot"></i>
-                        &nbsp;Via Roma 1, Milano
-                    </p>
-                    <p>
-                        <i class="fa-solid fa-phone"></i>
-                        <a href="tel:+390212345678" class="contact-link">02 1234 5678</a>
-                    </p>
-                    <p>
-                        <i class="fa-solid fa-envelope"></i>
-                        <a id="email-link" class="contact-link"></a>
-                    </p>
-                    <p>
-                        <i class="fa-solid fa-clock"></i>
-                        &nbsp;Lun–Ven: 9:00 – 18:
-                    </p>
-                </div>
+                <p class="mono">
+                    The code is available on request for research and collaboration purposes.
+                    <a href="mailto:mlv@unife.it" class="underline" style="font-size: var(--size-s)">
+                        <!-- <i class="fa-solid fa-arrow-up-right-from-square"></i> -->
+                        <b>Contact us.</b>
+                    </a>
+                </p>
             </div>
         </div>
     </section>
@@ -191,12 +148,59 @@
     <!-- FOOTER ----------------------------------------------------------------------------------->
     <footer>
         <div class="container">
-            <p>CODAE - Computational Optimization for Design of Architecture and Engineering<br>
-            A research group of the University of Ferrara</p>
-
-            <p class="mono">build.version 1.0.0</p>
+            <div class="grid-3 line" style="justify-items: center; align-items: center;">
+                <img src="../../logo/codae unife.svg" alt="Logo" class="logo-footer">
+                <div class="links-container">
+                    <p class="link mono">
+                        <a href="https://www.unife.it/it" target="_blank" class="underline">
+                            Università degli studi di Ferrara
+                        </a>
+                    </p>
+                    <p class="link mono">
+                        <a href="https://architettura.unife.it/it" target="_blank" class="underline">
+                            Dipartimento di Architettura
+                        </a>
+                    </p>
+                    <p class="link mono">
+                        <a href="" class="underline">
+                            CODÆ Research Group
+                        </a>
+                    </p>
+                </div>
+                <div class="links-container">
+                    <p class="link mono">Via Quartieri 8 Ferrara</p>
+                    <p class="link mono">
+                        <a href="tel:+390532293621" class="underline">
+                            +39 0532 293621
+                        </a>
+                    </p>
+                    <p class="link mono">
+                        <a id="email-link-footer" class="underline">
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-nav link horizontal line">
+                <a href="" class="underline mono">Home</a>
+                <a href="../../research/" class="underline mono">Research</a>
+                <a href="../../teaching/" class="underline mono">Teaching</a>
+                <a href="../../publications/" class="underline mono">Publications</a>
+                <a href="../../tools/" class="underline mono">Tools</a>
+                <a href="../../team/" class="underline mono">Team</a>
+            </div>
+            <div class="footer-nav">
+                <p class="mono">Università di Ferrara<br>via Ludovico Ariosto, 35 - 44121 Ferrara</p>
+                <p class="mono">C.F. 80007370382<br>P.IVA 00434690384</p>
+            </div>
+            <div class="footer-nav link horizontal">
+                <p class="mono">Copyright @ 2026, Università di Ferrara</p>
+                <div style="display: flex; gap: var(--space-l);">
+                    <a href="https://www.unife.it/it/ateneo/protezione-dati-personali" target="_blank" class="mono underline">Protezione dei dati personali</a>
+                    <a href="https://www.unife.it/it/informativa-cookie" target="_blank" class="mono underline">Informativa cookie</a>
+                </div>
+            </div>
         </div>
     </footer>
-
+    
 </body>
 </html>

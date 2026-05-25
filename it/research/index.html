@@ -3,9 +3,9 @@
 <head>
     <!-- SEO - INDICIZZAZIONE --------------------------------------------------------------------->
     <meta charset="UTF-8">
-    <meta name="description" content="Showpage CODE Computation in Design">
+    <meta name="description" content="CODAE Research Areas - Computational mechanics, structural optimization, adaptive systems and AI applied to civil engineering.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CODAE</title>
+    <title>CODAE - Ricerca</title>
 
     <!-- Link alle lingue -->
     <link rel="alternate" hreflang="it" href="../it/research/">
@@ -22,108 +22,137 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
 </head>
 
 <body>
     <!-- HEADER ----------------------------------------------------------------------------------->
     <header>
         <div class="container">
-            <a href="../">
-                <img src="../../logo/logo_codae.svg" alt="Logo" id="logo">
-            </a>
+            <a href="../"><img src="../../logo/logo_codae.svg" alt="Logo" id="logo"></a>
             <nav class="nav">                                       <!-- Link schede -->
-                <a href="../research/" class="headerBtn">Research</a>
-                <a href="../teaching/" class="headerBtn">Teaching</a>
-                <a href="../publications/" class="headerBtn">Publications</a>
-                <a href="../tools/" class="headerBtn">Tools</a>
-                <a href="../team/" class="headerBtn">Team</a>
+                <a href="../research/" class="shift">
+                    <span class="arrow underline">Ricerca</span>
+                </a>
+                <a href="../teaching/" class="shift">
+                    <span class="arrow underline">Insegnamento</span>
+                </a>
+                <a href="../publications/" class="shift">
+                    <span class="arrow underline">Pubblicazioni</span>
+                </a>
+                <a href="../tools/" class="shift">
+                    <span class="arrow underline">Strumenti</span>
+                </a>
+                <a href="../team/" class="shift">
+                    <span class="arrow underline">Gruppo</span>
+                </a>
             </nav>
             <div class="header-right">                              <!-- Link social -->
-                <a href="https://linkedin.com" class="icon linkedin" target="_blank">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-                <a href="../../research/" id="switch-lang">EN</a>                 <!-- Switch lingua (js) -->
+                <!-- <a href="https://linkedin.com" class="icon color" target="_blank">
+                    <i class="fa-brands fa-square-linkedin"></i>
+                </a> -->
+                <a href="../research/" class="icon color">EN</a> <!-- Switch lingua (js) -->
             </div>
-            <div class="hamburger" onclick="toggleMenu()">&lt;</div><!-- Hamburgher -->
+            <div class="hamburger" onclick="toggleMenu()">&lt; Altro</div><!-- Hamburgher -->
         </div>
     </header>
 
     <!-- HERO ------------------------------------------------------------------------------------->
-    <section class="hero hero-section">
+    <section class="hero">
         <div class="container">
-            <h1 class="section-title">&gt; Research Areas <span class="cursor-code">_</span></h1>
+            <h1 class="section-title">&gt; Aree di ricerca <span class="cursor">_</span></h1>
         </div>
     </section>
 
     <!-- RESEARCH --------------------------------------------------------------------------------->
-    <section class="cont-section">
+        <section>
         <div class="container">
-            <div class="grid-2">                                    <!-- Parti da AGGIORNARE: -->
-                <div class="card">
-                    <h3>Computational Mechanics</h3>
-                    <p>Advanced simulation and nonlinear modeling.</p>
+            <div class="section-label">02 // Ricerca</div>
+            <div class="grid-1">                                    <!-- Parti da AGGIORNARE: -->
+                <div class="card" id="masonry_analysis">
+                    <h3>Masonry analysis</h3>
+                    <!-- <p class="evidenziatore">#__</p> -->
+                    <p class="paragraph">Static (non-linear) analysis of masonry has reached a good level of knowledge among the scientists even if in the professional world the tools are still limited to the equivalent frame approach. The investigation of masonry structures, with special attention to Cultural Heritage, is a major concern as its correct application may guide a less invasive, more sustainable intervention design. Alternative methods to equivalent frame approaches are warmly welcomed to improve the prediction capabilities and, thus, optimize the intervention techniques.<br>Dynamic analysis can provide a more realistic representation of the response of masonry structures under typical vibration actions (traffic, earthquake, etc.) and, hence, a more correct estimation of its safety level. Dynamic analysis of masonry structures is nowadays still an open issue.<br>The major concern of the research is to develop a theoretical and numerical model to correctly describe static and dynamic behavior of 2D and 3D masonry elements under any type of static and dynamic actions.</p>
                 </div>
-                <div class="card">
-                    <h3>Structural Optimization</h3>
-                    <p>Data-driven and parametric design workflows.</p>
+                <div class="card" id="seismic_protection_systems">
+                    <h3>Seismic protection systems</h3>
+                    <!-- <p class="evidenziatore">#__</p> -->
+                    <p class="paragraph">Seismic protection is a very sensitive issue in seismic areas. Innovative solutions are warmly welcomed due to their higher sustainability and efficiency and lower cost. The most advanced solutions are based on passive and active vibration control technologies that are designed and manufactured in order to reduce the vibration enticed by external actions such as wind, earthquake.<br>Active vibration control technologies are advanced technologies that reduce the vibrations by applying special time-variable active forces. Special attention is given to active mass damper systems, capable of delivering highly efficient, targeted damping and significantly reducing seismic response through adaptive control strategies. Key issues are design and optimization of such systems that need to comply with efficient and correct prediction procedures. The research activity integrates modelling, analysis, and verification tools to design effective protection systems that improve structural safety, performance, and reliability under earthquake loading.</p>
                 </div>
-                <div class="card">
-                    <h3>Adaptive Systems</h3>
-                    <p>Responsive and intelligent structures.</p>
+                <div class="card" id="structural_monitoring">
+                    <h3>Structural monitoring</h3>
+                    <!-- <p class="evidenziatore">#__</p> -->
+                    <p class="paragraph">A correct estimation of the structural safety level of masonry buildings goes through:</p>
+                    <ul class="paragraph">
+                        <li>the detailed knowledge of geometry and mechanical properties of all its components and of its assembly;</li>
+                        <li>The estimation of the effects induced by frequent and less frequent dynamic actions such as traffic, excavation works, from low to moderate earthquakes, etc..</li>
+                        <li>The present research line is supported by the following experimental devices:</li>
+                        <li>Georadar Leica C-thrue</li>
+                        <li>Data logger by National Instruments 9234</li>
+                        <li>Seismic high sensitivity ceramic shear ICP accel PCB393B12</li>
+                        <li>Platinum triaxial high sensitivity ceramic shear ICP PCB356B18
+                        <li>Piezoelectric strain sensor PCB740B02</li>
+                    </ul>
+                    <p class="paragraph">And it has two main goals:</p>
+                    <ol class="paragraph">
+                        <li>To model correctly and in detail the masonry texture both at the surface level and along the thickness,</li>
+                        <li>To quantify the dynamic effects on masonry buildings</li>
+                    </ol>
                 </div>
-                <div class="card">
-                    <h3>AI for Civil Engineering</h3>
-                    <p>Machine learning for predictive modeling.</p>
+                <div class="card" id="soilStructure_interactions">
+                    <h3>Soil-structure interactions</h3>
+                    <!-- <p class="evidenziatore">#__</p> -->
+                    <p class="paragraph">The soil-structure interaction denotes the mutual influence between the soil and the structural responses to external actions. The issue is of fundamental importance to govern the static differential settlements provoked for instance by soil deterioration, excavations, changes in the destination of the building, or to predict the dynamic behavior of the buildings under the actions of vibrations travelling in the soil such as traffic and earthquake.<br>The main interest of the group is to develop a theoretical and numerical model capable to couple building and soil and provide realistic prediction of the settlements and vibrations induced by static and dynamic sources arising in the soil.</p>
                 </div>
-               <div class="card">
-                    <h3>Computational Mechanics</h3>
-                    <p>Advanced simulation and nonlinear modeling.</p>
-                </div>
-                <div class="card">
-                    <h3>Structural Optimization</h3>
-                    <p>Data-driven and parametric design workflows.</p>
-                </div>
-                <div class="card">
-                    <h3>Adaptive Systems</h3>
-                    <p>Responsive and intelligent structures.</p>
-                </div>
-                <div class="card">
-                    <h3>AI for Civil Engineering</h3>
-                    <p>Machine learning for predictive modeling.</p>
-                </div>
-               <div class="card">
-                    <h3>Computational Mechanics</h3>
-                    <p>Advanced simulation and nonlinear modeling.</p>
-                </div>
-                <div class="card">
-                    <h3>Structural Optimization</h3>
-                    <p>Data-driven and parametric design workflows.</p>
-                </div>
-                <div class="card">
-                    <h3>Adaptive Systems</h3>
-                    <p>Responsive and intelligent structures.</p>
-                </div>
-                <div class="card">
-                    <h3>AI for Civil Engineering</h3>
-                    <p>Machine learning for predictive modeling.</p>
-                </div>
-               <div class="card">
-                    <h3>Computational Mechanics</h3>
-                    <p>Advanced simulation and nonlinear modeling.</p>
-                </div>
-                <div class="card">
-                    <h3>Structural Optimization</h3>
-                    <p>Data-driven and parametric design workflows.</p>
-                </div>
-                <div class="card">
-                    <h3>Adaptive Systems</h3>
-                    <p>Responsive and intelligent structures.</p>
-                </div>
-                <div class="card">
-                    <h3>AI for Civil Engineering</h3>
-                    <p>Machine learning for predictive modeling.</p>
-                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="section-label">02 // Projects</div>
+            <div class="grid-1">                                    <!-- Parti da AGGIORNARE: -->
+                <a href="https://www.mascotproject.eu/" class="shift" target="_blank">
+                    <h3 class="arrow">MASCOT</h3>
+                    <p>Modular multilevel cost analysis software for composite smart fuselage</p>
+                    <div class="tags">
+                        <span class="tag accent">@Principal Investigator</span>
+                        <span class="tag">2019 - 2021</span> 
+                        <span class="tag">Horizon 2020 Framework Programme</span>
+                        <span class="tag">Research and Innovation Action (RIA)</span>
+                    </div>
+                    <p class="paragraph">The project aims to develop an optimized automated procedure for the economic and structural design of composite components for next-generation aircraft. The consortium includes the Department of Engineering at the University of Campania (Prof. Roberto Macchiaroli), Plyform Composites srl (Eng. Lorenzo Cartabia), and Skytechnology srl (Dr. Luca Senepa)</p>
+                </a>
+                <a href="https://doi.org/10.1007/978-3-030-41057-5_168" class="shift" target="_blank">
+                    <h3 class="arrow">MOINA</h3>
+                    <p>Smart monitoring of cultural heritage</p>
+                    <div class="tags">
+                        <span class="tag accent">@Principal Investigator</span>
+                        <span class="tag">2016 - 2018</span> 
+                        <span class="tag">Ferrara Chamber of Commerce</span>
+                        <span class="tag">2017 FIR Research Incentive Fund</span>
+                    </div>
+                    <p class="paragraph">Monitoring of vibrations caused by road traffic on masonry walls, with particular attention to cracks induced in artistic surfaces such as frescoes, plasterwork, and paintings, and estimation of maximum vibration levels. in collaboration with LIFE Srl (Laboratori Ingegneria Ferrara). Analyses conducted on Palazzo Roverella, Palazzo Trotti-Mosti, and Palazzo Marfisa in Ferrara.</p>
+                </a>
+                <a href="#" class="shift" target="_blank">
+                    <h3 class="arrow">SHIC</h3>
+                    <p>Smart health monitoring and control applied to cultural heritage</p>
+                    <div class="tags">
+                        <span class="tag accent">@Principal Investigator</span>
+                        <span class="tag">2010-2012</span> 
+                        <span class="tag">Ministry of Foreign Affairs</span>
+                    </div>
+                    <p class="paragraph">Executive Program for Cooperation in Science and Technology between Japan and Italy.</p>
+                </a>
+                <a href="https://sfera.unife.it/handle/11392/1751299" class="shift" target="_blank">
+                    <h3 class="arrow">Church of the Nativity in Bethlehem</h3>
+                    <p>Survey, Assessment study and Conservation plan</p>
+                    <div class="tags">
+                        <span class="tag accent">@Local Principal Investigator</span>
+                        <span class="tag">2009-2012</span> 
+                        <span class="tag">Palestinian government</span>
+                    </div>
+                    <p class="paragraph">Consortium led by the University of Ferrara, in collaboration with CNR Ivalsa, the Department of Architecture at the University of Ferrara, the University of Naples Federico II, the University of Siena, La Sapienza University of Rome, SCDS ProInnovTec, and CFR Ferrara. Winners of the international competition for the project in question. Geometric and structural survey of the entire church, with particular focus on the roof, the mosaics and frescoes, and the grottoes</p>
+                </a>
             </div>
         </div>
     </section>
@@ -131,12 +160,59 @@
     <!-- FOOTER ----------------------------------------------------------------------------------->
     <footer>
         <div class="container">
-            <p>CODAE - Computational Optimization for Design of Architecture and Engineering<br>
-            A research group of the University of Ferrara</p>
-
-            <p class="mono">build.version 1.0.0</p>
+            <div class="grid-3 line" style="justify-items: center; align-items: center;">
+                <img src="../../logo/codae unife.svg" alt="Logo" class="logo-footer">
+                <div class="links-container">
+                    <p class="link mono">
+                        <a href="https://www.unife.it/it" target="_blank" class="underline">
+                            Università degli studi di Ferrara
+                        </a>
+                    </p>
+                    <p class="link mono">
+                        <a href="https://architettura.unife.it/it" target="_blank" class="underline">
+                            Dipartimento di Architettura
+                        </a>
+                    </p>
+                    <p class="link mono">
+                        <a href="" class="underline">
+                            CODÆ Research Group
+                        </a>
+                    </p>
+                </div>
+                <div class="links-container">
+                    <p class="link mono">Via Quartieri 8 Ferrara</p>
+                    <p class="link mono">
+                        <a href="tel:+390532293621" class="underline">
+                            +39 0532 293621
+                        </a>
+                    </p>
+                    <p class="link mono">
+                        <a id="email-link-footer" class="underline">
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-nav link horizontal line">
+                <a href="" class="underline mono">Home</a>
+                <a href="../../research/" class="underline mono">Research</a>
+                <a href="../../teaching/" class="underline mono">Teaching</a>
+                <a href="../../publications/" class="underline mono">Publications</a>
+                <a href="../../tools/" class="underline mono">Tools</a>
+                <a href="../../team/" class="underline mono">Team</a>
+            </div>
+            <div class="footer-nav">
+                <p class="mono">Università di Ferrara<br>via Ludovico Ariosto, 35 - 44121 Ferrara</p>
+                <p class="mono">C.F. 80007370382<br>P.IVA 00434690384</p>
+            </div>
+            <div class="footer-nav link horizontal">
+                <p class="mono">Copyright @ 2026, Università di Ferrara</p>
+                <div style="display: flex; gap: var(--space-l);">
+                    <a href="https://www.unife.it/it/ateneo/protezione-dati-personali" target="_blank" class="mono underline">Protezione dei dati personali</a>
+                    <a href="https://www.unife.it/it/informativa-cookie" target="_blank" class="mono underline">Informativa cookie</a>
+                </div>
+            </div>
         </div>
     </footer>
-
+    
 </body>
 </html>

@@ -3,13 +3,13 @@
 <head>
     <!-- SEO - INDICIZZAZIONE --------------------------------------------------------------------->
     <meta charset="UTF-8">
-    <meta name="description" content="Showpage CODE Computation in Design">
+    <meta name="description" content="CODAE Team - Meet the researchers and PhD students of the Computational Optimization group at the University of Ferrara.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CODAE</title>
+    <title>CODAE - Gruppo</title>
 
     <!-- Link alle lingue -->
-    <link rel="alternate" hreflang="it" href="../it/team">
-    <link rel="alternate" hreflang="en" href="../team">
+    <link rel="alternate" hreflang="it" href="../it/team/">
+    <link rel="alternate" hreflang="en" href="../team/">
 
     <!-- CSS e JS-->
     <link rel="stylesheet" href="../../assets/style.css">
@@ -22,167 +22,219 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
 </head>
 
 <body>
     <!-- HEADER ----------------------------------------------------------------------------------->
     <header>
         <div class="container">
-            <a href="../">
-                <img src="../../logo/logo_codae.svg" alt="Logo" id="logo">
-            </a>
+            <a href="../"><img src="../../logo/logo_codae.svg" alt="Logo" id="logo"></a>
             <nav class="nav">                                       <!-- Link schede -->
-                <a href="../research/" class="headerBtn">Research</a>
-                <a href="../teaching/" class="headerBtn">Teaching</a>
-                <a href="../publications/" class="headerBtn">Publications</a>
-                <a href="../tools/" class="headerBtn">Tools</a>
-                <a href="../team/" class="headerBtn">Team</a>
+                <a href="../research/" class="shift">
+                    <span class="arrow underline">Ricerca</span>
+                </a>
+                <a href="../teaching/" class="shift">
+                    <span class="arrow underline">Insegnamento</span>
+                </a>
+                <a href="../publications/" class="shift">
+                    <span class="arrow underline">Pubblicazioni</span>
+                </a>
+                <a href="../tools/" class="shift">
+                    <span class="arrow underline">Strumenti</span>
+                </a>
+                <a href="../team/" class="shift">
+                    <span class="arrow underline">Gruppo</span>
+                </a>
             </nav>
             <div class="header-right">                              <!-- Link social -->
-                <a href="https://linkedin.com" class="icon linkedin" target="_blank">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-                <a href="../../team" id="switch-lang">EN</a>                 <!-- Switch lingua (js) -->
+                <!-- <a href="https://linkedin.com" class="icon color" target="_blank">
+                    <i class="fa-brands fa-square-linkedin"></i>
+                </a> -->
+                <a href="../team/" class="icon color">EN</a>      <!-- Switch lingua (js) -->
             </div>
-            <div class="hamburger" onclick="toggleMenu()">&lt;</div><!-- Hamburgher -->
+            <div class="hamburger" onclick="toggleMenu()">&lt; Altro</div><!-- Hamburgher -->
         </div>
     </header>
 
     <!-- HERO ------------------------------------------------------------------------------------->
     <section class="hero">
         <div class="container">
-            <h1 class="hero-title">TEAM it</h1>
-            <h2>Computational Optimization for Design of Architecture and Engineering</h2>
-            <p>
-                A research group of the University of Ferrara<br>
-                Designing structures through algorithms, data and advanced simulation.
-            </p>
-            <div class="hero-buttons">                              <!-- Bottoni principali -->
-                <a href="../research/" class="btn secondary">Explore Research</a>
-                <a href="../publications/" class="btn secondary">Publications</a>
-                <a href="../tools/" class="btn secondary">Tools</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ABOUT ------------------------------------------------------------------------------------>
-    <section class="panel panel1">
-        <div class="container">
-            <div class="section-label">01 // About</div>
-            <div class="about-grid">                                <!-- Descrizione -->
-                <div>
-                    <h3>Research at the intersection of computation and structural design.</h4>
-                    <p>
-                        We investigate computational methods for structural optimization,
-                        adaptive systems and algorithmic design strategies in civil engineering.
-                    </p>
-                </div>
-                <div class="code-block">                            <!-- Codice -->
-<pre>
-<span class="kw">if</span> (<span class="var">design</span> == <span class="var">intelligent</span>) {
-    <span class="var">structure</span> = <span class="var">optimized</span>;
-} <span class="cursor-code">_</span>
-</pre>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- RESEARCH --------------------------------------------------------------------------------->
-    <section class="panel panel2">
-        <div class="container">
-            <div class="section-label">02 // Research Areas</div>
-            <div class="grid-2">                                    <!-- Parti da AGGIORNARE: -->
-                <div class="card">
-                    <h3>Computational Mechanics</h3>
-                    <p>Advanced simulation and nonlinear modeling.</p>
-                </div>
-                <div class="card">
-                    <h3>Structural Optimization</h3>
-                    <p>Data-driven and parametric design workflows.</p>
-                </div>
-                <div class="card">
-                    <h3>Adaptive Systems</h3>
-                    <p>Responsive and intelligent structures.</p>
-                </div>
-                <div class="card">
-                    <h3>AI for Civil Engineering</h3>
-                    <p>Machine learning for predictive modeling.</p>
-                </div>
-            </div>
-            <div class="section-buttons">                           <!-- Bottone -->
-                <a href="../research/" class="btn primary">Show more</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- PUBLICATIONS ----------------------------------------------------------------------------->
-    <section class="panel panel3">
-        <div class="container">
-            <div class="section-label">03 // Publications</div>     <!-- Parti da AGGIORNARE: -->
-            <div class="publications">
-                <h3>Adaptive Concrete Systems</h3>
-                <p>[2026] Driven structural optimization.</p>
-            </div>
-            <div class="publications">
-                <h3>Genetic algorithms for optimized computation</h3>
-                <p>[2025] Generational optimization parameters and their influence.</p>
-            </div>
-            <div class="publications">
-                <h3>AI-based Seismic Modeling</h3>
-                <p>[2025] Predictive resilience analysis.</p>
-            </div>
-            <div class="publications">
-                <h3>Smart Materials for Energy Efficiency</h3>
-                <p>[2024] Integrating responsive composites in sustainable building design.</p>
-            </div>
-            <div class="section-buttons">                           <!-- Bottone -->
-                <a href="../publications/" class="btn primary">Show more</a>
-            </div>
+            <h1 class="section-title">&gt; Gruppo <span class="cursor">_</span></h1>
         </div>
     </section>
 
     <!-- TEAM ------------------------------------------------------------------------------------->
-    <section class="panel panel4">
+    <section>
         <div class="container">
-            <div class="section-label">04 // Team</div>
-            <div class="team-grid">                                 <!-- Parti da AGGIORNARE: -->
-                <div class="team-member">
-                    <h3>Dr. Maria Rossi</h3>
-                    <p>role: computational design</p>
-                </div>
-                <div class="team-member">
-                    <h3>Dr. Luca Bianchi</h3>
-                    <p>role: structural mechanics</p>
-                </div>
-                <div class="team-member">
-                    <h3>PhD. Anna Verdi</h3>
-                    <p>role: optimization algorithms</p>
+            <div class="section-label">01 // Ricercatore principale</div>
+            <div class="grid-2asim team" id="vincenzo_mallardo">
+                <img src="../../logo/vincenzo.png" alt="Prof. Vincenzo Mallardo" class="photo" style="
+                    width: 240px;
+                    height: 320px;
+                ">
+                <div class="card">                                  <!-- Contatti -->
+                    <h3>Prof. Vincenzo Mallardo</h3>
+                    <div class="tags">
+                        <span class="tag accent">@Full Professor</span>
+                        <!-- <span class="tag">#</span>
+                        <span class="tag">#</span>
+                        <span class="tag">#</span> -->
+                    </div>
+                    <p class="paragraph">
+                        Professore ordinario di Scienza delle Costruzioni presso il Dipartimento di Architettura dell'Università di Ferrara. Presidente del Comitato degli Studenti del Dipartimento. Redattore associato del European Journal of Computational Mechanicsof. Ricercatore princiale del progetto 864154 MASCOT (Modular multilevel cost Analysis Software for COmposite smarT fuselage). Ricercatore principale di progetti internazionali nel campo dei Beni Culturali (Restauro della chiesa della Natività a Betlemme, Monitoraggio Smart dello stato di salute di beni culturali in Giappone). Numerosi periodi di ricerca/visita all'estero (Wessex Institute of Technology, University of Southampton, Queen Mary College London, Nagoya University, Imperial College London). Attività di revisione per numerose riviste di meccanica computazionale. Docente nel Master di "Miglioramento sismico, restauro e consolidamento del costruito storico e monumentale" e nel Master Internazionale "Restauro, Conservazione e Valorizzazione del Patrimonio Culturale" con Polis Tirana. 60 pubblicazioni in Scopus, 1000 citazioni, h-index 18, Maggio 2026. Ampia gamma di argomenti nell'ambito della meccanica strutturale, tra cui: danneggiamento continuo nei materiali fragili, ottimizzazione strutturale, analisi di affidabilità e identificazione degli impatti nei componenti compositi, analisi statica e dinamica non lineare delle strutture in muratura.
+                    </p>
+                    <div class="link horizontal">
+                        <a id="email-link-mallardo" class="underline"></a>
+                        <a href="https://www.linkedin.com/in/vincenzo-mallardo-26b39a5/" target="_blank" class="underline">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <span class="link-label">Linkedin</span>
+                        </a>
+                        <a href="https://scholar.google.com/citations?user=u2Trna8AAAAJ&hl=it" target="_blank" class="underline">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span class="link-label">Scholar</span>
+                        </a>
+                        <a href="https://orcid.org/0000-0002-1915-3758" target="_blank" class="underline">
+                            <i class="fa-brands fa-orcid"></i>
+                            <span class="link-label">ORCID</span>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="info">
-                <div class="map">                                   <!-- Mappa -->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1414.8246674963586!2d11.6225061912806!3d44.82870806536274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477e4e42a81eaf05%3A0x3d88ddab32c898a1!2sUniversit%C3%A0%20degli%20Studi%20di%20Ferrara%20-%20Dipartimento%20di%20Architettura!5e0!3m2!1sit!2sit!4v1773043558312!5m2!1sit!2sit" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="section-label">02 // Gruppo</div>
+
+            <div class="item" id="nicola_grillanda">
+                <div class="grid-2asim team">
+                    <img src="../../logo/nicola.jpg" alt="Dr. Nicola Grillanda" class="photo" style="
+                        width: 160px;
+                        height: 160px;
+                    ">
+                    <div>
+                        <div class="shift card-open color" onclick="togglePub(this)">
+                            <div class="card">
+                                <h3>Dr. Nicola Grillanda</h3>
+                                <div class="tags">
+                                    <span class="tag accent">@Postdoc</span>
+                                    <!-- <span class="tag">#</span>
+                                    <span class="tag">#</span> -->
+                                </div>
+                                <p class="paragraph expand-preview">
+                                    Il Dott. Nicola Grillanda ha conseguito la Laurea Magistrale in Ingegneria Civile presso l'Università di Ferrara (Ferrara, Italia) nel 2016. Ha trascorso quasi due anni come Ricercatore presso l'Università di Ferrara prima di ...
+                                </p>
+                            </div>
+                            <h3 class="arrow vertical"></h3>
+                        </div>
+                        <div class="expand">
+                            <div class="expand-inner">
+                                <p class="paragraph">
+                                    Il Dott. Nicola Grillanda ha conseguito la Laurea Magistrale in Ingegneria Civile presso l'Università di Ferrara (Ferrara, Italia) nel 2016. Ha trascorso quasi due anni come Ricercatore presso l'Università di Ferrara prima di iniziare un Dottorato di Ricerca in Architettura, Ambiente Costruito e Ingegneria delle Costruzioni presso il Politecnico di Milano (Milano, Italia). Ha conseguito il Dottorato nel marzo 2022 e successivamente ha lavorato come Ricercatore Post-dottorato presso la stessa università. Nel gennaio 2023 si è trasferito all'Università di Sheffield, nel Regno Unito, dove ha lavorato come Ricercatore Associato in Ingegneria dei Ponti nell'ambito del progetto finanziato dall'EPSRC "Exploiting the resilience of masonry arch bridge infrastructure: a 3D multi-level modelling framework" fino alla fine del 2023. Dalla fine del 2023 è Ricercatore Post-dottorato presso l'Università di Ferrara.<br>Nel corso degli anni, ha trascorso periodi di visiting professor presso l'Università del Minho (Guimaraes, Portogallo), l'Università di Cagliari (Cagliari, Italia) e l'Università di Siviglia (Siviglia, Spagna). Infine, dal 2024 è membro del comitato scientifico dell'ISI-Ingegneria Sismica Italiana.<br>I suoi interessi di ricerca includono metodi computazionali per strutture murarie storiche, strategie numeriche per ponti in muratura, modelli geometrici basati su NURBS, metodi di ottimizzazione, protezione sismica tramite smorzatori di massa attivi, metamateriali auxetici. In questi ambiti, è autore di oltre 30 articoli su riviste, 4 capitoli di libri e diversi atti di convegni.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="link horizontal">
+                            <a id="email-link-grillanda" class="underline"></a>
+                            <a href="https://www.linkedin.com/in/nicola-grillanda-67945357/" target="_blank" class="underline">
+                                <i class="fa-brands fa-linkedin"></i>
+                                <span class="link-label">Linkedin</span>
+                            </a>
+                            <a href="https://scholar.google.com/citations?user=rUf3JdsAAAAJ&hl=it" target="_blank" class="underline">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <span class="link-label">Scholar</span>
+                            </a>
+                            <a href="https://orcid.org/0000-0001-7948-8712" target="_blank" class="underline">
+                                <i class="fa-brands fa-orcid"></i>
+                                <span class="link-label">ORCID</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="contact">                               <!-- Contatti -->
-                    <h3>Contact</h3>
-                    <p>
-                        <i class="fa-solid fa-location-dot"></i>
-                        &nbsp;Via Roma 1, Milano
+            </div>
+
+            <div class="item" id="riccardo_giacometti">
+                <div class="grid-2asim team">
+                    <img src="../../logo/T2.png" alt="Riccardo Giacometti" class="photo" style="
+                        width: 160px;
+                        height: 160px;
+                    ">
+                    <div>
+                        <div class="shift card-open color" onclick="togglePub(this)">
+                            <div class="card">
+                                <h3>Riccardo Giacometti</h3>
+                                <div class="tags">
+                                    <span class="tag accent">@PhD candidate</span>
+                                    <!-- <span class="tag">#</span>
+                                    <span class="tag">#</span> -->
+                                </div>
+                                <p class="paragraph expand-preview">
+                                    Il Dott. Riccardo Giacometti ha conseguito la Laurea Magistrale in Architettura presso l'Università di Ferrara nel 2023. Subito dopo la laurea, ha iniziato un Dottorato di Ricerca in ...
+                                </p>
+                            </div>
+                            <h3 class="arrow vertical"></h3>
+                        </div>
+                        <div class="expand">
+                            <div class="expand-inner">
+                                <p class="paragraph">
+                                    Il Dott. Riccardo Giacometti ha conseguito la Laurea Magistrale in Architettura presso l'Università di Ferrara nel 2023. Subito dopo la laurea, ha iniziato un Dottorato di Ricerca in "Difesa contro i rischi naturali e transizione ecologica dell'ambiente costruito" presso l'Università di Catania e Ferrara, dove svolge attività di ricerca.<br>La sua attività di ricerca si concentra sulla dinamica strutturale, con particolare attenzione all'applicazione di Smorzatori di Massa Attivi (AMD) per il controllo delle vibrazioni e la mitigazione sismica in strutture sia intelaiate che in muratura. I suoi interessi includono anche il comportamento dinamico delle costruzioni storiche e le strategie avanzate per il monitoraggio e la tutela strutturale.<br>Durante il suo dottorato, ha sviluppato approcci analitici e numerici per lo studio della risposta strutturale sotto carico dinamico, combinando prospettive architettoniche e ingegneristiche nel campo della resilienza strutturale e della conservazione del patrimonio.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="link horizontal">
+                            <a id="email-link-giacometti" class="underline"></a>
+                            <a href="https://www.linkedin.com/in/riccardo-giacometti-813755270/" target="_blank" class="underline">
+                                <i class="fa-brands fa-linkedin"></i>
+                                <span class="link-label">Linkedin</span>
+                            </a>
+                            <!-- <a href="#" target="_blank" class="underline">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <span class="link-label evidenziatore">Scholar</span>
+                            </a> -->
+                            <a href="https://orcid.org/0009-0004-4407-8229" target="_blank" class="underline">
+                                <i class="fa-brands fa-orcid"></i>
+                                <span class="link-label">ORCID</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="section-label">03 // Dove trovarci</div> 
+            <div class="grid-2">
+                <div>                                               <!-- Contatti -->
+                    <h3>Contatti</h3>
+                    <p class="link">
+                        <a href="https://maps.app.goo.gl/6Z5bNsqr3vZs5XxD9" class="link underline" target="_blank">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Via Quartieri, 8, 44121 Ferrara FE
+                        </a>
                     </p>
-                    <p>
-                        <i class="fa-solid fa-phone"></i>
-                        <a href="tel:+390212345678" class="contact-link">02 1234 5678</a>
+                    <p class="link">
+                        <a href="tel:+390532293621" class="link underline">
+                            <i class="fa-solid fa-phone"></i>
+                            +39 0532 293621
+                        </a>
                     </p>
-                    <p>
-                        <i class="fa-solid fa-envelope"></i>
-                        <a id="email-link" class="contact-link"></a>
+                    <p class="link">
+                        <a id="email-link" class="link underline">
+                        </a>
                     </p>
-                    <p>
+                    <p class="link">
                         <i class="fa-solid fa-clock"></i>
-                        &nbsp;Lun–Ven: 9:00 – 18:
+                        Lun-Ven 9:00 - 18:00
                     </p>
+                </div>
+                <div>                                               <!-- Mappa -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1414.8246674963586!2d11.6225061912806!3d44.82870806536274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477e4e42a81eaf05%3A0x3d88ddab32c898a1!2sUniversit%C3%A0%20degli%20Studi%20di%20Ferrara%20-%20Dipartimento%20di%20Architettura!5e0!3m2!1sit!2sit!4v1773043558312!5m2!1sit!2sit"
+                    class="map"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
@@ -191,12 +243,59 @@
     <!-- FOOTER ----------------------------------------------------------------------------------->
     <footer>
         <div class="container">
-            <p>CODAE - Computational Optimization for Design of Architecture and Engineering<br>
-            A research group of the University of Ferrara</p>
-
-            <p class="mono">build.version 1.0.0</p>
+            <div class="grid-3 line" style="justify-items: center; align-items: center;">
+                <img src="../../logo/codae unife.svg" alt="Logo" class="logo-footer">
+                <div class="links-container">
+                    <p class="link mono">
+                        <a href="https://www.unife.it/it" target="_blank" class="underline">
+                            Università degli studi di Ferrara
+                        </a>
+                    </p>
+                    <p class="link mono">
+                        <a href="https://architettura.unife.it/it" target="_blank" class="underline">
+                            Dipartimento di Architettura
+                        </a>
+                    </p>
+                    <p class="link mono">
+                        <a href="" class="underline">
+                            CODÆ Research Group
+                        </a>
+                    </p>
+                </div>
+                <div class="links-container">
+                    <p class="link mono">Via Quartieri 8 Ferrara</p>
+                    <p class="link mono">
+                        <a href="tel:+390532293621" class="underline">
+                            +39 0532 293621
+                        </a>
+                    </p>
+                    <p class="link mono">
+                        <a id="email-link-footer" class="underline">
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-nav link horizontal line">
+                <a href="" class="underline mono">Home</a>
+                <a href="../../research/" class="underline mono">Research</a>
+                <a href="../../teaching/" class="underline mono">Teaching</a>
+                <a href="../../publications/" class="underline mono">Publications</a>
+                <a href="../../tools/" class="underline mono">Tools</a>
+                <a href="../../team/" class="underline mono">Team</a>
+            </div>
+            <div class="footer-nav">
+                <p class="mono">Università di Ferrara<br>via Ludovico Ariosto, 35 - 44121 Ferrara</p>
+                <p class="mono">C.F. 80007370382<br>P.IVA 00434690384</p>
+            </div>
+            <div class="footer-nav link horizontal">
+                <p class="mono">Copyright @ 2026, Università di Ferrara</p>
+                <div style="display: flex; gap: var(--space-l);">
+                    <a href="https://www.unife.it/it/ateneo/protezione-dati-personali" target="_blank" class="mono underline">Protezione dei dati personali</a>
+                    <a href="https://www.unife.it/it/informativa-cookie" target="_blank" class="mono underline">Informativa cookie</a>
+                </div>
+            </div>
         </div>
     </footer>
-
+    
 </body>
 </html>
