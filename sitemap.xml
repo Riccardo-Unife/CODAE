@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+    <!-- Home inglese -->
+    <url>
+        <loc>https://codae.unife.it/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://codae.unife.it/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://codae.unife.it/it/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://codae.unife.it/"/>
+        <lastmod>2026-05-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Home italiana -->
+    <url>
+        <loc>https://codae.unife.it/it/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://codae.unife.it/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://codae.unife.it/it/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://codae.unife.it/"/>
+        <lastmod>2026-05-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+
+    <!-- Research inglese -->
+    <url>
+        <loc>https://codae.unife.it/research/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://codae.unife.it/research/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://codae.unife.it/it/research/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://codae.unife.it/research/"/>
+        <lastmod>2026-05-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Research italiana -->
+    <url>
+        <loc>https://codae.unife.it/it/research/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://codae.unife.it/research/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://codae.unife.it/it/research/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://codae.unife.it/research/"/>
+        <lastmod>2026-05-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+
+    <!-- Teaching inglese -->
+    <url>
+        <loc>https://codae.unife.it/teaching/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://codae.unife.it/teaching/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://codae.unife.it/it/teaching/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://codae.unife.it/teaching/"/>
+        <lastmod>2026-05-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Teaching italiana -->
+    <url>
+        <loc>https://codae.unife.it/it/teaching/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://codae.unife.it/teaching/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://codae.unife.it/it/teaching/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://codae.unife.it/teaching/"/>
+        <lastmod>2026-05-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+
+    <!-- Publications inglese -->
+    <url>
+        <loc>https://codae.unife.it/publications/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://codae.unife.it/publications/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://codae.unife.it/it/publications/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://codae.unife.it/publications/"/>
+        <lastmod>2026-05-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Publications italiana -->
+    <url>
+        <loc>https://codae.unife.it/it/publications/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://codae.unife.it/publications/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://codae.unife.it/it/publications/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://codae.unife.it/publications/"/>
+        <lastmod>2026-05-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+
+    <!-- Tools inglese -->
+    <url>
+        <loc>https://codae.unife.it/tools/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://codae.unife.it/tools/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://codae.unife.it/it/tools/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://codae.unife.it/tools/"/>
+        <lastmod>2026-05-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Tools italiana -->
+    <url>
+        <loc>https://codae.unife.it/it/tools/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://codae.unife.it/tools/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://codae.unife.it/it/tools/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://codae.unife.it/tools/"/>
+        <lastmod>2026-05-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+
+    <!-- Team inglese -->
+    <url>
+        <loc>https://codae.unife.it/team/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://codae.unife.it/team/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://codae.unife.it/it/team/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://codae.unife.it/team/"/>
+        <lastmod>2026-05-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Team italiana -->
+    <url>
+        <loc>https://codae.unife.it/it/team/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://codae.unife.it/team/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://codae.unife.it/it/team/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://codae.unife.it/team/"/>
+        <lastmod>2026-05-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+</urlset>
