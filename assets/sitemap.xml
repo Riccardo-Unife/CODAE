@@ -4,18 +4,22 @@
 
     <!-- Home inglese -->
     <url>
-        <loc>https://__/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://__/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://__/it/"/>
+        <loc>https://codae.unife.it/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://codae.unife.it/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://codae.unife.it/it/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://codae.unife.it/"/>
+        <lastmod>2026-05-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
 
     <!-- Home italiana -->
     <url>
-        <loc>https://__/it/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://__/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://__/it/"/>
+        <loc>https://codae.unife.it/it/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://codae.unife.it/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://codae.unife.it/it/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://codae.unife.it/"/>
+        <lastmod>2026-05-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -23,18 +27,22 @@
 
     <!-- Research inglese -->
     <url>
-        <loc>https://__/research/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://__/research/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://__/it/research/"/>
+        <loc>https://codae.unife.it/research/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://codae.unife.it/research/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://codae.unife.it/it/research/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://codae.unife.it/research/"/>
+        <lastmod>2026-05-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <!-- Research italiana -->
     <url>
-        <loc>https://__/it/research/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://__/research/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://__/it/research/"/>
+        <loc>https://codae.unife.it/it/research/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://codae.unife.it/research/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://codae.unife.it/it/research/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://codae.unife.it/research/"/>
+        <lastmod>2026-05-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -42,18 +50,22 @@
 
     <!-- Teaching inglese -->
     <url>
-        <loc>https://__/teaching/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://__/teaching/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://__/it/teaching/"/>
+        <loc>https://codae.unife.it/teaching/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://codae.unife.it/teaching/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://codae.unife.it/it/teaching/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://codae.unife.it/teaching/"/>
+        <lastmod>2026-05-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <!-- Teaching italiana -->
     <url>
-        <loc>https://__/it/teaching/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://__/teaching/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://__/it/teaching/"/>
+        <loc>https://codae.unife.it/it/teaching/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://codae.unife.it/teaching/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://codae.unife.it/it/teaching/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://codae.unife.it/teaching/"/>
+        <lastmod>2026-05-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -61,18 +73,22 @@
 
     <!-- Publications inglese -->
     <url>
-        <loc>https://__/publications/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://__/publications/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://__/it/publications/"/>
+        <loc>https://codae.unife.it/publications/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://codae.unife.it/publications/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://codae.unife.it/it/publications/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://codae.unife.it/publications/"/>
+        <lastmod>2026-05-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <!-- Publications italiana -->
     <url>
-        <loc>https://__/it/publications/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://__/publications/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://__/it/publications/"/>
+        <loc>https://codae.unife.it/it/publications/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://codae.unife.it/publications/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://codae.unife.it/it/publications/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://codae.unife.it/publications/"/>
+        <lastmod>2026-05-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -80,18 +96,22 @@
 
     <!-- Tools inglese -->
     <url>
-        <loc>https://__/tools/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://__/tools/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://__/it/tools/"/>
+        <loc>https://codae.unife.it/tools/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://codae.unife.it/tools/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://codae.unife.it/it/tools/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://codae.unife.it/tools/"/>
+        <lastmod>2026-05-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <!-- Tools italiana -->
     <url>
-        <loc>https://__/it/tools/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://__/tools/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://__/it/tools/"/>
+        <loc>https://codae.unife.it/it/tools/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://codae.unife.it/tools/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://codae.unife.it/it/tools/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://codae.unife.it/tools/"/>
+        <lastmod>2026-05-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -99,20 +119,23 @@
 
     <!-- Team inglese -->
     <url>
-        <loc>https://__/team/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://__/team/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://__/it/team/"/>
+        <loc>https://codae.unife.it/team/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://codae.unife.it/team/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://codae.unife.it/it/team/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://codae.unife.it/team/"/>
+        <lastmod>2026-05-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <!-- Team italiana -->
     <url>
-        <loc>https://__/it/team/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://__/team/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://__/it/team/"/>
+        <loc>https://codae.unife.it/it/team/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://codae.unife.it/team/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://codae.unife.it/it/team/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://codae.unife.it/team/"/>
+        <lastmod>2026-05-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-
 </urlset>
