@@ -3,20 +3,63 @@
 <head>
     <!-- SEO - INDICIZZAZIONE --------------------------------------------------------------------->
     <meta charset="UTF-8">
-    <meta name="description" content="CODAE - Calcolo Ottimizzato per la Definizione di Architettura e Ingegneria. Gruppo di Ricerca dell'Università di Ferrara.">
+    <meta name="description" content="CODAE - Computational Optimization for Design of Architecture and Engineering. Gruppo di Ricerca dell'Università di Ferrara.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+
+    <meta property="og:site_name" content="CODAE">
+    <meta property="og:title" content="CODAE">
+    <meta property="og:description" content="Computational Optimization for Design of Architecture and Engineering.">
+    <meta property="og:url" content="https://codae.unife.it/it/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://codae.unife.it/logo/og-image.png">
+
+    <link rel="canonical" href="https://codae.unife.it/it/">
+
     <title>CODAE</title>
 
     <!-- Link alle lingue -->
-    <link rel="alternate" hreflang="it" href="../it/">
-    <link rel="alternate" hreflang="en" href="../">
+    <link rel="alternate" hreflang="it" href="https://codae.unife.it/it/">
+    <link rel="alternate" hreflang="en" href="https://codae.unife.it/">
+    <link rel="alternate" hreflang="x-default" href="https://codae.unife.it/">
 
     <!-- CSS e JS-->
-    <link rel="stylesheet" href="../assets/style.css">
-    <script src="../assets/script.js" defer></script>
+    <link rel="stylesheet" href="/assets/style.css">
+    <script src="/assets/script.js" defer></script>ù
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["ResearchOrganization", "Organization"],
+  "@id": "https://codae.unife.it/#organization",
+  "name": "CODAE Research Group",
+  "alternateName": "CODAE",
+  "url": "https://codae.unife.it/",
+  "logo": "https://codae.unife.it/logo/logo_codae.svg",
+  "description": "Computational Optimization for Design of Architecture and Engineering. Research group of the University of Ferrara.",
+
+  "parentOrganization": {
+    "@type": "CollegeOrUniversity",
+    "name": "University of Ferrara",
+    "url": "https://www.unife.it/"
+  },
+
+  "department": {
+    "@type": "Organization",
+    "name": "Department of Architecture",
+    "url": "https://architettura.unife.it/"
+  },
+
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "academic contact",
+    "email": "mlv@unife.it"
+  }
+}
+    </script>
 
     <!-- Logo scheda web -->
-    <link rel="icon" href="../logo/logo_codae.svg?v=1" type="image/svg+xml">
+    <link rel="icon" href="/logo/logo_codae.svg?v=1" type="image/svg+xml">
 
     <!-- Google Fonts e Icone-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,36 +72,37 @@
     <!-- HEADER ----------------------------------------------------------------------------------->
     <header>
         <div class="container">
-            <a href="">                                             <!-- Logo -->
-                <img src="../logo/logo_codae.svg" alt="Logo" id="logo">
+            <a href="/it/" aria-label="Homepage CODAE" aria-current="page">
+                <img src="/logo/logo_codae.svg" alt="CODAE Logo" id="logo">
             </a>
-            <nav class="nav">                                       <!-- Link schede -->
-                <a href="../it/research/" class="shift">
+            <nav class="nav" aria-label="Main navigation">          <!-- Link schede -->
+                <a href="/it/research/" class="shift">
                     <span class="arrow underline">Ricerca</span>
                 </a>
-                <a href="../it/teaching/" class="shift">
+                <a href="/it/teaching/" class="shift">
                     <span class="arrow underline">Insegnamento</span>
                 </a>
-                <a href="../it/publications/" class="shift">
+                <a href="/it/publications/" class="shift">
                     <span class="arrow underline">Pubblicazioni</span>
                 </a>
-                <a href="../it/tools/" class="shift">
+                <a href="/it/tools/" class="shift">
                     <span class="arrow underline">Strumenti</span>
                 </a>
-                <a href="../it/team/" class="shift">
+                <a href="/it/team/" class="shift">
                     <span class="arrow underline">Gruppo</span>
                 </a>
             </nav>
             <div class="header-right">                              <!-- Link social -->
-                <!-- <a href="https://linkedin.com" class="icon color" target="_blank">
+                <!-- <a href="https://linkedin.com" class="icon color" target="_blank" rel="noopener noreferrer">
                     <i class="fa-brands fa-square-linkedin"></i>
                 </a> -->
-                <a href="../" class="icon color">EN</a>             <!-- Switch lingua (js) -->
+                <a href="/" class="icon color">EN</a>               <!-- Switch lingua (js) -->
             </div>
             <div class="hamburger" onclick="toggleMenu()">&lt; Altro</div><!-- Hamburgher -->
         </div>
     </header>
 
+    <main aria-label="Main content">
     <!-- HERO ------------------------------------------------------------------------------------->
     <section class="home hero-home">
         <div class="container">
@@ -75,9 +119,9 @@
                 Un gruppo di Ricerca dell'Università di Ferrara
             </p>
             <div class="btn-group">                                 <!-- Bottoni principali -->
-                <a href="../it/publications/" class="btn secondary shift arrow">Pubblicazioni</a>
-                <a href="../it/research/" class="btn secondary shift arrow">Aree di ricerca</a>
-                <a href="../it/tools/" class="btn secondary shift arrow">Strumenti</a>
+                <a href="/it/publications/" class="btn secondary shift arrow">Pubblicazioni</a>
+                <a href="/it/research/" class="btn secondary shift arrow">Aree di ricerca</a>
+                <a href="/it/tools/" class="btn secondary shift arrow">Strumenti</a>
             </div>
         </div>
     </section>
@@ -92,9 +136,6 @@
                     <p class="paragraph">
                         Studiamo metodi computazionali per l'ottimizzazione strutturale predittiva, sistemi adattivi e strategie di progettazione algoritmica in architettura e ingegneria civile.<br>Offriamo inoltre servizi esterni ad aziende, associazioni pubbliche e private, gestori di immobili e cittadini.
                     </p>
-                    <!-- <div class="btn-group">
-                        <a href="../#" class="btn primary shift arrow">Mostra altro</a>
-                    </div> -->
                 </div>
                 <div>                                               <!-- Codice -->
 <pre>
@@ -112,25 +153,25 @@
         <div class="container">
             <div class="section-label">02 // Aree di ricerca</div>
             <div class="grid-2">                                    <!-- Parti da AGGIORNARE: -->
-                <a href="../it/research/#masonry_analysis" class="shift card">
+                <a href="/it/research/#masonry_analysis" class="shift card">
                     <h3 class="arrow">Analisi di muratura</h3>
                     <p>Verso metodi di analisi dinamica migliorati per le strutture in muratura nei beni culturali.</p>
                 </a>
-                <a href="../it/research/#seismic_protection_systems" class="shift card">
+                <a href="/it/research/#seismic_protection_systems" class="shift card">
                     <h3 class="arrow">Sistemi di protezione sismica</h3>
                     <p>Strategie avanzate di controllo attivo per migliorare la resilienza sismica di strutture a telaio e in muratura.</p>
                 </a>
-                <a href="../it/research/#structural_monitoring" class="shift card">
+                <a href="/it/research/#structural_monitoring" class="shift card">
                     <h3 class="arrow">Monitoraggio strutturale</h3>
                     <p>Strategie avanzate di monitoraggio e modellazione per la valutazione del comportamento strutturale delle murature.</p>
                 </a>
-                <a href="../it/research/#soilStructure_interactions" class="shift card">
+                <a href="/it/research/#soilStructure_interactions" class="shift card">
                     <h3 class="arrow">Interazioni suolo-struttura</h3>
                     <p>Modellazione avanzata dell'interazione suolo-struttura per valutare l'impatto delle azioni statiche e dinamiche del terreno.</p>
                 </a>
             </div>
             <div class="btn-group">                                 <!-- Bottone -->
-                <a href="../it/research/" class="btn primary shift arrow">Mostra altro</a>
+                <a href="/it/research/" class="btn primary shift arrow">Mostra altro</a>
             </div>
         </div>
     </section>
@@ -140,21 +181,21 @@
         <div class="container">
             <div class="section-label">03 // Gruppo di ricerca</div>
             <div class="grid-3">                                    <!-- Parti da AGGIORNARE: -->
-                <a href="../it/team/#vincenzo_mallardo" class="shift card">
+                <a href="/it/team/#vincenzo_mallardo" class="shift card">
                     <h3 class="arrow">Prof. Vincenzo Mallardo</h3>
                     <p>Ricercatore principale</p>
                     <div class="tags">
                         <span class="tag accent">@Full Professor</span>
                     </div>
                 </a>
-                <a href="../it/team/#nicola_grillanda" class="shift card">
+                <a href="/it/team/#nicola_grillanda" class="shift card">
                     <h3 class="arrow">Dr. Nicola Grillanda</h3>
                     <p>Ricercatore senior</p>
                     <div class="tags">
                         <span class="tag accent">@Postdoc</span>
                     </div>
                 </a>
-                <a href="../it/team/#riccardo_giacometti" class="shift card">
+                <a href="/it/team/#riccardo_giacometti" class="shift card">
                     <h3 class="arrow">Riccardo Giacometti</h3>
                     <p>Giovane ricercatore</p>
                     <div class="tags">
@@ -167,7 +208,7 @@
                 <div>                                               <!-- Contatti -->
                     <h3>Contatti</h3>
                     <p class="link">
-                        <a href="https://maps.app.goo.gl/6Z5bNsqr3vZs5XxD9" class="link underline" target="_blank">
+                        <a href="https://maps.app.goo.gl/6Z5bNsqr3vZs5XxD9" class="link underline" target="_blank" rel="noopener noreferrer">
                             <i class="fa-solid fa-location-dot"></i>
                             Via Quartieri, 8, 44121 Ferrara FE
                         </a>
@@ -190,6 +231,7 @@
                 <div>                                               <!-- Mappa -->
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1414.8246674963586!2d11.6225061912806!3d44.82870806536274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477e4e42a81eaf05%3A0x3d88ddab32c898a1!2sUniversit%C3%A0%20degli%20Studi%20di%20Ferrara%20-%20Dipartimento%20di%20Architettura!5e0!3m2!1sit!2sit!4v1773043558312!5m2!1sit!2sit"
                     class="map"
+                    title="CODAE Headquarters Map - University of Ferrara"
                     allowfullscreen=""
                     loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -197,25 +239,26 @@
             </div>
         </div>
     </section>
+    </main>
 
     <!-- FOOTER ----------------------------------------------------------------------------------->
     <footer>
         <div class="container">
             <div class="grid-3 line" style="justify-items: center; align-items: center;">
-                <img src="../logo/codae unife.svg" alt="Logo" class="logo-footer">
+                <img src="/logo/codae-unife.svg" alt="Logo" class="logo-footer">
                 <div class="links-container">
                     <p class="link mono">
-                        <a href="https://www.unife.it/it" target="_blank" class="underline">
+                        <a href="https://www.unife.it/it" target="_blank" rel="noopener noreferrer" class="underline">
                             Università degli studi di Ferrara
                         </a>
                     </p>
                     <p class="link mono">
-                        <a href="https://architettura.unife.it/it" target="_blank" class="underline">
+                        <a href="https://architettura.unife.it/it" target="_blank" rel="noopener noreferrer" class="underline">
                             Dipartimento di Architettura
                         </a>
                     </p>
                     <p class="link mono">
-                        <a href="" class="underline">
+                        <a href="/" class="underline">
                             CODÆ Research Group
                         </a>
                     </p>
@@ -234,12 +277,12 @@
                 </div>
             </div>
             <div class="footer-nav link horizontal line">
-                <a href="" class="underline mono">Home</a>
-                <a href="../research/" class="underline mono">Research</a>
-                <a href="../teaching/" class="underline mono">Teaching</a>
-                <a href="../publications/" class="underline mono">Publications</a>
-                <a href="../tools/" class="underline mono">Tools</a>
-                <a href="../team/" class="underline mono">Team</a>
+                <a href="/" class="underline mono">Home</a>
+                <a href="/research/" class="underline mono">Research</a>
+                <a href="/teaching/" class="underline mono">Teaching</a>
+                <a href="/publications/" class="underline mono">Publications</a>
+                <a href="/tools/" class="underline mono">Tools</a>
+                <a href="/team/" class="underline mono">Team</a>
             </div>
             <div class="footer-nav">
                 <p class="mono">Università di Ferrara<br>via Ludovico Ariosto, 35 - 44121 Ferrara</p>
@@ -248,8 +291,8 @@
             <div class="footer-nav link horizontal">
                 <p class="mono">Copyright @ 2026, Università di Ferrara</p>
                 <div style="display: flex; gap: var(--space-l);">
-                    <a href="https://www.unife.it/it/ateneo/protezione-dati-personali" target="_blank" class="mono underline">Protezione dei dati personali</a>
-                    <a href="https://www.unife.it/it/informativa-cookie" target="_blank" class="mono underline">Informativa cookie</a>
+                    <a href="https://www.unife.it/it/ateneo/protezione-dati-personali" target="_blank" rel="noopener noreferrer" class="mono underline">Protezione dei dati personali</a>
+                    <a href="https://www.unife.it/it/informativa-cookie" target="_blank" rel="noopener noreferrer" class="mono underline">Informativa cookie</a>
                 </div>
             </div>
         </div>
